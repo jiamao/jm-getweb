@@ -10,6 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
-    "simple-get": "^3.0.3"
+    "simple-get": "^3.0.3",
+    "tunnel": "0.0.6"
   }
 }
