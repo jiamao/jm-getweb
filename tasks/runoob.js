@@ -5,6 +5,8 @@ const requestWeb = require('../lib/request');
 async function getPage(url) {
     const html = await requestWeb(url);
     const result = parseHtml.parse(html);
+
+    
     return result;
 }
 
