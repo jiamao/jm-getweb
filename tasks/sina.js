@@ -2,7 +2,6 @@
 const { get } = require('../lib/page');
 const path = require('path');
 const fs = require('fs');
-const { text } = require('cheerio/lib/api/manipulation');
 
 const dataDir = path.join(__dirname, '../data/sina');
 const rootJson = path.join(dataDir, 'root.json');
