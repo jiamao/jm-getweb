@@ -1,18 +1,10 @@
 
-const parseHtml = require('../lib/parseHtml');
-const requestWeb = require('../lib/request');
+const { get } = require('../lib/page');
 
-async function getPage(url) {
-    const html = await requestWeb(url);
-    const result = parseHtml.parse(html);
 
-    
-    return result;
-}
+get('https://www.runoob.com/js/js-intro.html').then(ret => {
 
-getPage('https://www.runoob.com/js/js-intro.html').then(ret => {
-
-    console.log(ret);
+    console.log(ret.$.text());
 }).catch(e=>{
     console.log(e);
 });
