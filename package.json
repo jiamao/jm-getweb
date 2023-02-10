@@ -10,6 +10,8 @@
   "license": "MIT",
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
+    "headless-chrome-crawler": "^1.8.0",
+    "puppeteer": "^19.6.3",
     "simple-get": "^3.0.3",
     "tunnel": "0.0.6"
   }
