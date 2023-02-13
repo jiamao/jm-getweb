@@ -14,10 +14,9 @@ const web = {
 async function start() {
     await page.getWeb(web.name, web);
 
-    await page.destroy();
+    //await page.destroy();
 }
 
-start();
-
+module.exports.start = start;
 
 
