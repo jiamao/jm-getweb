@@ -3,5 +3,5 @@
 
 ### 抓取新浪
 ```js
-node ./tasks/sina.js
+node index.js
 ```
