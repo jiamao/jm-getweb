@@ -28,6 +28,10 @@ async function convertToPDF(browser, title, url, parentTitle) {
         parent: parentTitle || ''
       };
 
+      fs.writeFile('data/baike/web.json', JSON.stringify(webCache), (err)=>{
+        err && console.error(err);
+      });
+
       const page = await browser.newPage();
       await page.goto(url, {waitUntil: 'networkidle0'});  
 
@@ -59,10 +63,7 @@ async function convertToPDF(browser, title, url, parentTitle) {
                 continue;
               }
             }
-            await convertToPDF(browser, link.name.trim(), link.href, title);
-            fs.writeFile('data/baike/web.json', JSON.stringify(webCache), (err)=>{
-              err && console.error(err);
-            });
+            await convertToPDF(browser, link.name.trim(), link.href, title);            
           }
         }
 
