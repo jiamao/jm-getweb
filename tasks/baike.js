@@ -16,6 +16,7 @@ async function start(title, url) {
 start(webCache.title, webCache.root);
 
 async function convertToPDF(browser, title, url) {
+  
   console.log('start', title, url);
 
   return new Promise(async (resolve, reject) => {
@@ -32,7 +33,7 @@ async function convertToPDF(browser, title, url) {
       };
 
       if(meta.error) {
-        console.log(meta.error);
+        console.log(meta.url, meta.error);
         throw meta.error;
       }
 
@@ -49,11 +50,8 @@ async function convertToPDF(browser, title, url) {
               console.log(link.name , '已经抓取过，跳过');
               continue;
             }
-            if(link.name.includes('\n')) {
-              console.log(meta.url, link);
-              throw Error(meta.title);
-            }
-            await convertToPDF(browser, link.name, link.href);
+           
+            await convertToPDF(browser, link.name.trim(), link.href);
           }
         }
 
@@ -84,7 +82,9 @@ async function getPageMeta(page) {
   return new Promise(async (resolve)=>{
     setTimeout(async () => {
       const meta = await page.evaluate(async ()=>{
-        let obj = {};
+        let obj = {
+          links: []
+        };
         try {
           window.scrollTo(0, document.body.scrollHeight);
           
@@ -98,8 +98,8 @@ async function getPageMeta(page) {
           document.querySelector('.tashuo-bottom') && document.querySelector('.tashuo-bottom').remove();
           document.querySelector('.after-content') && document.querySelector('.after-content').remove();
           document.querySelector('.wgt-footer-main') && document.querySelector('.wgt-footer-main').remove();
-          document.querySelector('.main-content') && document.querySelector('.main-content').style.width = '95%';
-          document.querySelector('.content') && document.querySelector('.content').style.width = '90%';
+          document.querySelector('.main-content') && (document.querySelector('.main-content').style.width = '95%');
+          document.querySelector('.content') && (document.querySelector('.content').style.width = '90%');
           
           obj = {
             url: location.href,
@@ -117,6 +117,8 @@ async function getPageMeta(page) {
                 const name = m.getAttribute('data-lemmatitle') || m.text;
                 if(href.indexOf(location.pathname) > 0) continue;
                 if(href.indexOf(location.origin + '/item/') < 0) continue;
+                if(name.indexOf('帮助中心') > -1 || !/^[a-zA-Z0-9_\.\u4e00-\u9fa5]*$/.test(name)) continue;
+
                 obj.links.push({
                   href,
                   name: name
