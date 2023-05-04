@@ -60,9 +60,10 @@ async function convertToPDF(browser, title, url, parentTitle) {
               }
             }
             await convertToPDF(browser, link.name.trim(), link.href, title);
+            fs.writeFile('data/baike/web.json', JSON.stringify(webCache), (err)=>{
+              err && console.error(err);
+            });
           }
-
-          fs.writeFileSync('data/baike/web.json', JSON.stringify(webCache));
         }
 
         if(!meta.loading) resolve(meta);
