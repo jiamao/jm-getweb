@@ -21,17 +21,17 @@ async function convertToPDF(browser, title, url, parentTitle) {
 
   return new Promise(async (resolve, reject) => {
     try {
-      const page = await browser.newPage();
-      await page.goto(url, {waitUntil: 'networkidle0'});  
-
-      let meta = await getPageMeta(page);
-
-      // 缓存
+        // 缓存
       webCache.data[title] = {
         title,
         url,
         parent: parentTitle || ''
       };
+
+      const page = await browser.newPage();
+      await page.goto(url, {waitUntil: 'networkidle0'});  
+
+      let meta = await getPageMeta(page);      
 
       if(meta.error) {
         console.log(meta.url, meta.error);
