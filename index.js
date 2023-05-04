@@ -1,15 +1,13 @@
+const { app, BrowserWindow } = require("electron");
 
-const page = require('./lib/page');
-const sina = require('./tasks/sina');
+const createWindow = () => {
+  const win = new BrowserWindow({
+    width: 400,
+    height: 400,
+  });
+  win.loadFile("./index.html");
+};
 
-
-async function start() {
-    await Promise.all([
-        sina.start()
-    ]);
-
-    // 释放浏览器资源
-    await page.destroy();
-}
-
-start();
+app.whenReady().then(() => {
+  createWindow();
+});

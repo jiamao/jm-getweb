@@ -1,6 +1,6 @@
 package-lock.json
 node_modules
 test/*.html
-data/*/*/*.pdf
-data/*/*/*.html
-data/*/*/*.txt
+data/*/**/*.pdf
+data/*/**/*.html
+data/*/**/*.txt

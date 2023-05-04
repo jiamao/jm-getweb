@@ -16,7 +16,7 @@ async function start(title, url) {
 start(webCache.title, webCache.root);
 
 async function convertToPDF(browser, title, url, parentTitle) {
-  
+  if(!title || !url) return null;
   console.log('start', title, url);
 
   return new Promise(async (resolve, reject) => {
@@ -47,13 +47,22 @@ async function convertToPDF(browser, title, url, parentTitle) {
         // 递归抓取
         if(meta && meta.links && meta.links.length) {
           for(const link of meta.links) {
-            if(webCache.data[link.name]) {
-              console.log(link.name , '已经抓取过，跳过');
-              continue;
+            const d = webCache.data[link.name];
+            if(d) {
+              if(d.disabled) {
+                console.log(link.name , '非合格的词汇，跳过');
+                continue;
+              }
+              const pdfname = `data/baike/${link.name.trim()}.pdf`;
+              if(fs.existsSync(pdfname)) {
+                console.log(link.name , '已经抓取过，跳过');
+                continue;
+              }
             }
-           
             await convertToPDF(browser, link.name.trim(), link.href, title);
           }
+
+          fs.writeFileSync('data/baike/web.json', JSON.stringify(webCache));
         }
 
         if(!meta.loading) resolve(meta);
