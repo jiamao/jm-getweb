@@ -2823,6 +2823,119 @@
       "url": "https://baike.baidu.com/item/%E7%99%BD%E5%B1%85%E6%98%93?fromModule=lemma_inlink",
       "parent": "交代",
       "disabled": true
+    },
+    "行政机关": {
+      "title": "行政机关",
+      "url": "https://baike.baidu.com/item/%E8%A1%8C%E6%94%BF%E6%9C%BA%E5%85%B3/662575?fromModule=lemma_inlink",
+      "parent": "行政单位"
+    },
+    "总称": {
+      "title": "总称",
+      "url": "https://baike.baidu.com/item/%E6%80%BB%E7%A7%B0/8996550?fromModule=lemma_inlink",
+      "parent": "行政机关",
+      "disabled": true
+    },
+    "称谓": {
+      "title": "称谓",
+      "url": "https://baike.baidu.com/item/%E7%A7%B0%E8%B0%93/4677454?fromModule=lemma_inlink",
+      "parent": "总称",
+      "disabled": true
+    },
+    "亲属": {
+      "title": "亲属",
+      "url": "https://baike.baidu.com/item/%E4%BA%B2%E5%B1%9E/3903589?fromModule=lemma_inlink",
+      "parent": "称谓",
+      "disabled": true
+    },
+    "婚姻": {
+      "title": "婚姻",
+      "url": "https://baike.baidu.com/item/%E5%A9%9A%E5%A7%BB/2645061?fromModule=lemma_inlink",
+      "parent": "亲属",
+      "disabled": true
+    },
+    "社会关系": {
+      "title": "社会关系",
+      "url": "https://baike.baidu.com/item/%E7%A4%BE%E4%BC%9A%E5%85%B3%E7%B3%BB/6543215?fromModule=lemma_inlink",
+      "parent": "婚姻",
+      "disabled": true
+    },
+    "两性": {
+      "title": "两性",
+      "url": "https://baike.baidu.com/item/%E4%B8%A4%E6%80%A7/373310?fromModule=lemma_inlink",
+      "parent": "婚姻",
+      "disabled": true
+    },
+    "夫妻": {
+      "title": "夫妻",
+      "url": "https://baike.baidu.com/item/%E5%A4%AB%E5%A6%BB/991368?fromModule=lemma_inlink",
+      "parent": "婚姻",
+      "disabled": true
+    },
+    "婚姻关系": {
+      "title": "婚姻关系",
+      "url": "https://baike.baidu.com/item/%E5%A9%9A%E5%A7%BB%E5%85%B3%E7%B3%BB/2761109?fromModule=lemma_inlink",
+      "parent": "夫妻",
+      "disabled": true
+    },
+    "婚姻登记机关": {
+      "title": "婚姻登记机关",
+      "url": "https://baike.baidu.com/item/%E5%A9%9A%E5%A7%BB%E7%99%BB%E8%AE%B0%E6%9C%BA%E5%85%B3/10685995?fromModule=lemma_inlink",
+      "parent": "婚姻关系",
+      "disabled": true
+    },
+    "结婚登记": {
+      "title": "结婚登记",
+      "url": "https://baike.baidu.com/item/%E7%BB%93%E5%A9%9A%E7%99%BB%E8%AE%B0/7026801?fromModule=lemma_inlink",
+      "parent": "婚姻登记机关",
+      "disabled": true
+    },
+    "制度": {
+      "title": "制度",
+      "url": "https://baike.baidu.com/item/%E5%88%B6%E5%BA%A6/40669?fromModule=lemma_inlink",
+      "parent": "结婚登记",
+      "disabled": true
+    },
+    "运作模式": {
+      "title": "运作模式",
+      "url": "https://baike.baidu.com/item/%E8%BF%90%E4%BD%9C%E6%A8%A1%E5%BC%8F/8975162?fromModule=lemma_inlink",
+      "parent": "制度",
+      "disabled": true
+    },
+    "操作": {
+      "title": "操作",
+      "url": "https://baike.baidu.com/item/%E6%93%8D%E4%BD%9C/33052?fromModule=lemma_inlink",
+      "parent": "运作模式",
+      "disabled": true
+    },
+    "技能": {
+      "title": "技能",
+      "url": "https://baike.baidu.com/item/%E6%8A%80%E8%83%BD/33065?fromModule=lemma_inlink",
+      "parent": "操作",
+      "disabled": true
+    },
+    "知识经验": {
+      "title": "知识经验",
+      "url": "https://baike.baidu.com/item/%E7%9F%A5%E8%AF%86%E7%BB%8F%E9%AA%8C/1639944?fromModule=lemma_inlink",
+      "parent": "技能",
+      "disabled": true
+    },
+    "哲学": {
+      "title": "哲学",
+      "url": "https://baike.baidu.com/item/%E5%93%B2%E5%AD%A6?fromModule=lemma_inlink",
+      "parent": "知识经验",
+      "disabled": true
+    },
+    "世界观": {
+      "title": "世界观",
+      "url": "https://baike.baidu.com/item/%E4%B8%96%E7%95%8C%E8%A7%82/284683?fromModule=lemma_inlink",
+      "parent": "哲学",
+      "disabled": true
+    },
+    "人生观": {
+      "title": "人生观",
+      "url": "https://baike.baidu.com/item/%E4%BA%BA%E7%94%9F%E8%A7%82/631299?lemmaFrom=lemma_starMap&fromModule=lemma_starMap",
+      "parent": "世界观",
+      "disabled": true
     }
   }
 }
