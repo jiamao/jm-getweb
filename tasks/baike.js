@@ -17,16 +17,24 @@ start(webCache.title, webCache.root);
 
 async function convertToPDF(browser, title, url, parentTitle) {
   if(!title || !url) return null;
+
+  const htmlName = `data/baike/${title}.html`;
+  if(fs.existsSync(htmlName)) {
+    console.log(title , '已经抓取过，跳过');
+    return null;
+  }
+  
+  // 缓存
+  webCache.data[title] = {
+    title,
+    url,
+    parent: parentTitle || ''
+  };
+
   console.log('start', title, url);
 
   return new Promise(async (resolve, reject) => {
-    try {
-        // 缓存
-      webCache.data[title] = {
-        title,
-        url,
-        parent: parentTitle || ''
-      };
+    try {       
 
       fs.writeFile('data/baike/web.json', JSON.stringify(webCache), (err)=>{
         err && console.error(err);
@@ -42,7 +50,7 @@ async function convertToPDF(browser, title, url, parentTitle) {
         throw meta.error;
       }
 
-      meta && fs.writeFile(`data/baike/${title}.html`, meta.html, (err)=>{
+      meta && fs.writeFile(htmlName, meta.html, (err)=>{
         err && console.log(err);
       });
       
@@ -56,12 +64,7 @@ async function convertToPDF(browser, title, url, parentTitle) {
               if(d.disabled) {
                 console.log(link.name , '非合格的词汇，跳过');
                 continue;
-              }
-              const pdfname = `data/baike/${link.name.trim()}.pdf`;
-              if(fs.existsSync(pdfname)) {
-                console.log(link.name , '已经抓取过，跳过');
-                continue;
-              }
+              }              
             }
             await convertToPDF(browser, link.name.trim(), link.href, title);            
           }
