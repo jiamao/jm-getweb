@@ -25,7 +25,7 @@ async function convertToPDF(browser, title, url, parentTitle) {
   }
   
   // 缓存
-  webCache.data[title] = {
+  const pageInfo = webCache.data[title] = {
     title,
     url,
     parent: parentTitle || ''
@@ -34,12 +34,7 @@ async function convertToPDF(browser, title, url, parentTitle) {
   console.log('start', title, url);
 
   return new Promise(async (resolve, reject) => {
-    try {       
-
-      fs.writeFile('data/baike/web.json', JSON.stringify(webCache), (err)=>{
-        err && console.error(err);
-      });
-
+    try { 
       const page = await browser.newPage();
       await page.goto(url, {waitUntil: 'networkidle0'});  
 
@@ -52,6 +47,11 @@ async function convertToPDF(browser, title, url, parentTitle) {
 
       meta && fs.writeFile(htmlName, meta.html, (err)=>{
         err && console.log(err);
+      });
+      pageInfo.categories = meta.categories;
+
+      fs.writeFile('data/baike/web.json', JSON.stringify(webCache), (err)=>{
+        err && console.error(err);
       });
       
       meta.loading = true;
@@ -106,7 +106,6 @@ async function getPageMeta(page) {
           document.querySelector('.lemmaWgt-searchHeader') && document.querySelector('.lemmaWgt-searchHeader').remove();
           document.querySelector('.header-wrapper') && document.querySelector('.header-wrapper').remove();
           document.querySelector('.navbar-wrapper') && document.querySelector('.navbar-wrapper').remove();
-          document.querySelector('.before-content') && document.querySelector('.before-content').remove();
           document.querySelector('.side-content') && document.querySelector('.side-content').remove();
           document.querySelector('.top-tool') && document.querySelector('.top-tool').remove();
           document.querySelector('.new-bdsharebuttonbox') && document.querySelector('.new-bdsharebuttonbox').remove();
@@ -122,8 +121,16 @@ async function getPageMeta(page) {
             html: document.body.parentElement.innerHTML,
             head: document.head.innerHTML,
             title: document.title,
+            categories: [],
             links: []
         };
+
+        // 分类
+        const cats = document.querySelectorAll('ul.polysemantList-wrapper li');
+          for(const c of cats) {
+              const name = c.innerText.replace('▪', '');
+              name && obj.categories.push(name);
+          }
 
           const links = document.querySelectorAll('a');
           for(const m of links) {
@@ -140,6 +147,9 @@ async function getPageMeta(page) {
                 });
               }
           }
+
+          document.querySelector('.before-content') && document.querySelector('.before-content').remove();
+
           return obj;  
       }
       catch(e) {
