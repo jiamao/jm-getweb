@@ -15,7 +15,7 @@ async function start(title, url) {
 }
 start(webCache.title, webCache.root);
 
-async function convertToPDF(browser, title, url) {
+async function convertToPDF(browser, title, url, parentTitle) {
   
   console.log('start', title, url);
 
@@ -29,7 +29,8 @@ async function convertToPDF(browser, title, url) {
       // 缓存
       webCache.data[title] = {
         title,
-        url
+        url,
+        parent: parentTitle || ''
       };
 
       if(meta.error) {
@@ -51,7 +52,7 @@ async function convertToPDF(browser, title, url) {
               continue;
             }
            
-            await convertToPDF(browser, link.name.trim(), link.href);
+            await convertToPDF(browser, link.name.trim(), link.href, title);
           }
         }
 
