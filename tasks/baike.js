@@ -6,7 +6,7 @@ const words = fs.readFileSync('data/baike/words.dict', {
   encoding: 'utf8'
 }).split('\n');
 
-const maxDeep = 1;// 最深递归层数
+const maxDeep = 0;// 最深递归层数
 
 async function start(title) {
   const browser = await puppeteer.launch();
@@ -28,8 +28,9 @@ async function convertToPDF(browser, title, url, parentTitle, deep = 0) {
 
   const titlePath = title.replace(/["'\.\/\\]/g, '');
   const htmlName = `data/baike/${titlePath}.html`;
+  const pdfName = `data/baike/${titlePath}.pdf`;
   if(fs.existsSync(htmlName)) {
-    console.log(title , '已经抓取过，跳过');
+    console.log(title , '已经抓取过，跳过', htmlName);
     return null;
   }
   
@@ -60,6 +61,12 @@ async function convertToPDF(browser, title, url, parentTitle, deep = 0) {
       meta && !meta.subLemmaList && fs.writeFile(htmlName, meta.html, (err)=>{
         err && console.log(err);
       });
+
+      if(meta && !meta.url.startsWith('https://baike.baidu.com/item/')) {
+        console.log('302到了错误的地址,', meta.url);
+        resolve(null);
+        return;
+      }
       //pageInfo.categories = meta.categories;
 
       /*fs.writeFile('data/baike/web.json', JSON.stringify(webCache), (err)=>{
@@ -69,7 +76,7 @@ async function convertToPDF(browser, title, url, parentTitle, deep = 0) {
       meta.loading = true;
       setTimeout(async () => {
         // 递归抓取
-        if(meta && meta.links && meta.links.length && deep < maxDeep) {
+        if(meta && meta.links && meta.links.length && (deep < maxDeep || meta.subLemmaList)) {
           for(const link of meta.links) {
             const d = webCache.data[link.name];
             if(d) {
@@ -93,7 +100,11 @@ async function convertToPDF(browser, title, url, parentTitle, deep = 0) {
 
       setTimeout(async ()=>{
         if(!meta.subLemmaList) {
-          await page.pdf({path: `data/baike/${titlePath}.pdf`, format: 'a4', displayHeaderFooter: true});
+          console.log(title, pdfName);
+          await page.pdf({path: pdfName, format: 'a4', displayHeaderFooter: true});
+        }
+        else {
+          console.log('多义词', meta.url, meta.links);
         }
         await page.close();
 
@@ -161,6 +172,11 @@ async function getPageMeta(page) {
             return obj;
           }
 
+          if(document.title.indexOf('百度百科-验证') > -1) {
+            obj.error = '触发了百度验证';
+            return obj;
+          }
+
         // 分类
         const cats = document.querySelectorAll('ul.polysemantList-wrapper li');
           for(const c of cats) {
@@ -173,7 +189,7 @@ async function getPageMeta(page) {
               const href = m.href;
               if(href) {
                 const name = m.getAttribute('data-lemmatitle') || m.text;
-                if(href.indexOf(location.pathname) > 0) continue;
+                //if(href.indexOf(location.pathname) > 0 && href.indexOf(location.pathname + '/') < 0) continue;
                 if(href.indexOf(location.origin + '/item/') < 0) continue;
                 if(name.indexOf('帮助中心') > -1 || !/^[a-zA-Z0-9_\.\u4e00-\u9fa5]*$/.test(name)) continue;
 
