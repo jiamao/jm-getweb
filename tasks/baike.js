@@ -137,7 +137,12 @@ async function getPageMeta(page) {
             title: document.title,
             categories: [],
             links: []
-        };
+          };
+          // 错误的页
+          if(obj.url.indexOf('error.html') > -1) {
+            obj.error = '词条不存在';
+            return obj;
+          }
 
         // 分类
         const cats = document.querySelectorAll('ul.polysemantList-wrapper li');
