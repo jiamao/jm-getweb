@@ -6,11 +6,14 @@ const words = fs.readFileSync('data/baike/words.dict', {
   encoding: 'utf8'
 }).split('\n');
 
+const maxDeep = 1;// 最深递归层数
+
 async function start(title) {
   const browser = await puppeteer.launch();
 
-  await convertToPDF(browser, title);
-  
+  for(const word of words) {
+    await convertToPDF(browser, word);
+  }  
 
   await browser.close();
 
@@ -18,23 +21,26 @@ async function start(title) {
 }
 start(webCache.title, webCache.root);
 
-async function convertToPDF(browser, title, url, parentTitle) {
-
+async function convertToPDF(browser, title, url, parentTitle, deep = 0) {
+  if(deep > maxDeep) return null; // 限制层级
   if(!title) return null;
   if(!url) url = `https://baike.baidu.com/item/${encodeURIComponent(title)}`;
 
-  const htmlName = `data/baike/${title}.html`;
+  const titlePath = title.replace(/["'\.]/g, '');
+  const htmlName = `data/baike/${titlePath}.html`;
   if(fs.existsSync(htmlName)) {
     console.log(title , '已经抓取过，跳过');
     return null;
   }
   
   // 缓存
+  /*
   webCache.data[title] = {
     title,
     url,
     parent: parentTitle || ''
   };
+  */
 
   console.log('start', title, url);
 
@@ -62,7 +68,7 @@ async function convertToPDF(browser, title, url, parentTitle) {
       meta.loading = true;
       setTimeout(async () => {
         // 递归抓取
-        if(meta && meta.links && meta.links.length) {
+        if(meta && meta.links && meta.links.length && deep < maxDeep) {
           for(const link of meta.links) {
             const d = webCache.data[link.name];
             if(d) {
@@ -75,7 +81,7 @@ async function convertToPDF(browser, title, url, parentTitle) {
               console.log(link.name , '不在词典内，跳过');
               continue;
             }
-            await convertToPDF(browser, link.name.trim(), link.href, title);            
+            await convertToPDF(browser, link.name.trim(), link.href, title, deep+1);            
           }
         }
 
@@ -85,13 +91,13 @@ async function convertToPDF(browser, title, url, parentTitle) {
       }, 10);
 
       setTimeout(async ()=>{
-        await page.pdf({path: `data/baike/${title}.pdf`, format: 'a4', displayHeaderFooter: true});
+        await page.pdf({path: `data/baike/${titlePath}.pdf`, format: 'a4', displayHeaderFooter: true});
         await page.close();
 
         if(!meta.loading) resolve(meta);
         else meta.loading = false;
 
-      }, 1000);
+      }, 500);
 
       
     }
