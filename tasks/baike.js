@@ -52,6 +52,11 @@ async function convertToPDF(browser, title, url, parentTitle, deep = 0) {
 
       let meta = await getPageMeta(page);      
 
+      /*if(meta.error == '触发了百度验证') {
+        await browser.close();
+        const browser = await puppeteer.launch();
+
+      }*/
       if(meta.error) {
         console.log(meta.url, meta.error);
         throw meta.error;
@@ -77,7 +82,9 @@ async function convertToPDF(browser, title, url, parentTitle, deep = 0) {
       setTimeout(async () => {
         // 递归抓取
         if(meta && meta.links && meta.links.length && (deep < maxDeep || meta.subLemmaList)) {
+          
           for(const link of meta.links) {
+            
             const d = webCache.data[link.name];
             if(d) {
               if(d.disabled) {
@@ -85,11 +92,15 @@ async function convertToPDF(browser, title, url, parentTitle, deep = 0) {
                 continue;
               }              
             }
-            if(!words.includes(link.name)) {
+            if(!words.includes(link.name) && !meta.subLemmaList) {
               console.log(link.name , '不在词典内，跳过');
               continue;
             }
-            await convertToPDF(browser, link.name.trim(), link.href, title, deep+1);            
+
+            if(meta.subLemmaList) {
+              console.log('多议词抓取', link);
+            }
+            await convertToPDF(browser, link.name.trim(), link.href, title, meta.subLemmaList?0:(deep+1));            
           }
         }
 
@@ -104,7 +115,7 @@ async function convertToPDF(browser, title, url, parentTitle, deep = 0) {
           await page.pdf({path: pdfName, format: 'a4', displayHeaderFooter: true});
         }
         else {
-          console.log('多义词', meta.url, meta.links);
+          console.log('多义词', title);
         }
         await page.close();
 
@@ -189,9 +200,9 @@ async function getPageMeta(page) {
               const href = m.href;
               if(href) {
                 const name = m.getAttribute('data-lemmatitle') || m.text;
-                //if(href.indexOf(location.pathname) > 0 && href.indexOf(location.pathname + '/') < 0) continue;
+                if(href.indexOf(location.pathname) > 0 && href.indexOf(location.pathname + '/') < 0) continue;
                 if(href.indexOf(location.origin + '/item/') < 0) continue;
-                if(name.indexOf('帮助中心') > -1 || !/^[a-zA-Z0-9_\.\u4e00-\u9fa5]*$/.test(name)) continue;
+                if(name.indexOf('帮助中心') > -1 || !/^[a-zA-Z0-9_：:\-\%\.\u4e00-\u9fa5]*$/.test(name)) continue;
 
                 obj.links.push({
                   href,
