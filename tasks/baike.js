@@ -2,11 +2,14 @@ const puppeteer = require('puppeteer');
 const fs = require('fs');
 
 const webCache = JSON.parse(fs.readFileSync('data/baike/web.json'));
+const words = fs.readFileSync('data/baike/words.dict', {
+  encoding: 'utf8'
+}).split('\n');
 
-async function start(title, url) {
+async function start(title) {
   const browser = await puppeteer.launch();
 
-  await convertToPDF(browser, title, url);
+  await convertToPDF(browser, title);
   
 
   await browser.close();
@@ -16,7 +19,9 @@ async function start(title, url) {
 start(webCache.title, webCache.root);
 
 async function convertToPDF(browser, title, url, parentTitle) {
-  if(!title || !url) return null;
+
+  if(!title) return null;
+  if(!url) url = `https://baike.baidu.com/item/${encodeURIComponent(title)}`;
 
   const htmlName = `data/baike/${title}.html`;
   if(fs.existsSync(htmlName)) {
@@ -25,7 +30,7 @@ async function convertToPDF(browser, title, url, parentTitle) {
   }
   
   // 缓存
-  const pageInfo = webCache.data[title] = {
+  webCache.data[title] = {
     title,
     url,
     parent: parentTitle || ''
@@ -48,11 +53,11 @@ async function convertToPDF(browser, title, url, parentTitle) {
       meta && fs.writeFile(htmlName, meta.html, (err)=>{
         err && console.log(err);
       });
-      pageInfo.categories = meta.categories;
+      //pageInfo.categories = meta.categories;
 
-      fs.writeFile('data/baike/web.json', JSON.stringify(webCache), (err)=>{
+      /*fs.writeFile('data/baike/web.json', JSON.stringify(webCache), (err)=>{
         err && console.error(err);
-      });
+      });*/
       
       meta.loading = true;
       setTimeout(async () => {
@@ -65,6 +70,10 @@ async function convertToPDF(browser, title, url, parentTitle) {
                 console.log(link.name , '非合格的词汇，跳过');
                 continue;
               }              
+            }
+            if(!words.includes(link.name)) {
+              console.log(link.name , '不在词典内，跳过');
+              continue;
             }
             await convertToPDF(browser, link.name.trim(), link.href, title);            
           }
@@ -102,16 +111,21 @@ async function getPageMeta(page) {
         };
         try {
           window.scrollTo(0, document.body.scrollHeight);
+
+          function deleteElement(selector) {
+            document.querySelector(selector) && document.querySelector(selector).remove();
+          }
           
-          document.querySelector('.lemmaWgt-searchHeader') && document.querySelector('.lemmaWgt-searchHeader').remove();
-          document.querySelector('.header-wrapper') && document.querySelector('.header-wrapper').remove();
-          document.querySelector('.navbar-wrapper') && document.querySelector('.navbar-wrapper').remove();
-          document.querySelector('.side-content') && document.querySelector('.side-content').remove();
-          document.querySelector('.top-tool') && document.querySelector('.top-tool').remove();
-          document.querySelector('.new-bdsharebuttonbox') && document.querySelector('.new-bdsharebuttonbox').remove();
-          document.querySelector('.tashuo-bottom') && document.querySelector('.tashuo-bottom').remove();
-          document.querySelector('.after-content') && document.querySelector('.after-content').remove();
-          document.querySelector('.wgt-footer-main') && document.querySelector('.wgt-footer-main').remove();
+          deleteElement('.lemmaWgt-searchHeader');
+          deleteElement('.header-wrapper');
+          deleteElement('.navbar-wrapper');
+          deleteElement('.side-content');
+          deleteElement('.top-tool');
+          deleteElement('.new-bdsharebuttonbox');
+          deleteElement('.tashuo-bottom');
+          deleteElement('.after-content');
+          deleteElement('.wgt-footer-main');
+          deleteElement('.btn-list');
           document.querySelector('.main-content') && (document.querySelector('.main-content').style.width = '95%');
           document.querySelector('.content') && (document.querySelector('.content').style.width = '90%');
           
@@ -148,7 +162,7 @@ async function getPageMeta(page) {
               }
           }
 
-          document.querySelector('.before-content') && document.querySelector('.before-content').remove();
+          deleteElement('.before-content');
 
           return obj;  
       }
