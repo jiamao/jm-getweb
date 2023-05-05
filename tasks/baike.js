@@ -26,7 +26,7 @@ async function convertToPDF(browser, title, url, parentTitle, deep = 0) {
   if(!title) return null;
   if(!url) url = `https://baike.baidu.com/item/${encodeURIComponent(title)}`;
 
-  const titlePath = title.replace(/["'\.]/g, '');
+  const titlePath = title.replace(/["'\.\/\\]/g, '');
   const htmlName = `data/baike/${titlePath}.html`;
   if(fs.existsSync(htmlName)) {
     console.log(title , '已经抓取过，跳过');
@@ -56,7 +56,8 @@ async function convertToPDF(browser, title, url, parentTitle, deep = 0) {
         throw meta.error;
       }
 
-      meta && fs.writeFile(htmlName, meta.html, (err)=>{
+      // 多义词不保存
+      meta && !meta.subLemmaList && fs.writeFile(htmlName, meta.html, (err)=>{
         err && console.log(err);
       });
       //pageInfo.categories = meta.categories;
@@ -91,7 +92,9 @@ async function convertToPDF(browser, title, url, parentTitle, deep = 0) {
       }, 10);
 
       setTimeout(async ()=>{
-        await page.pdf({path: `data/baike/${titlePath}.pdf`, format: 'a4', displayHeaderFooter: true});
+        if(!meta.subLemmaList) {
+          await page.pdf({path: `data/baike/${titlePath}.pdf`, format: 'a4', displayHeaderFooter: true});
+        }
         await page.close();
 
         if(!meta.loading) resolve(meta);
@@ -121,6 +124,7 @@ async function getPageMeta(page) {
           function deleteElement(selector) {
             document.querySelector(selector) && document.querySelector(selector).remove();
           }
+
           
           deleteElement('.lemmaWgt-searchHeader');
           deleteElement('.header-wrapper');
@@ -144,6 +148,13 @@ async function getPageMeta(page) {
             categories: [],
             links: []
           };
+
+          // 多义词列表
+          const subLemmaList = document.querySelector('.lemmaWgt-subLemmaListTitle');
+          if(subLemmaList && subLemmaList.innerText.indexOf('这是一个多义词，请在下列义项上选择浏览') > -1) {
+            obj.subLemmaList = true;
+          }
+
           // 错误的页
           if(obj.url.indexOf('error.html') > -1) {
             obj.error = '词条不存在';
