@@ -12,7 +12,7 @@ const maxDeep = 0;// 最深递归层数
 async function start(title) {
   Browser = await puppeteer.launch();
 
-  for(let index=5045; index<words.length; index++) {
+  for(let index=5565; index<words.length; index++) {
     await convertToPDF(Browser, words[index]);
     console.log('第', index);
   }  
@@ -28,7 +28,7 @@ async function convertToPDF(browser, title, url, parentTitle, deep = 0) {
   if(!title) return null;
   if(!url) url = `https://baike.baidu.com/item/${encodeURIComponent(title)}`;
 
-  if(title.includes('排名') || title.includes('排行榜') || title.includes('100强') || title.includes('500强') || title.includes('《') || /\d+年/.test(title)) {
+  if(title.includes('排名') || title.includes('排行榜') || title.includes('100强') || title.includes('500强') || title.includes('ST中') || title.includes('《') || /\d+年/.test(title)) {
     console.log(title, '不合规则，跳过');
     return null;
   }
