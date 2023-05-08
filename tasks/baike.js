@@ -6,13 +6,13 @@ const words = fs.readFileSync('data/baike/words.dict', {
   encoding: 'utf8'
 }).split('\n');
 
-let Browser = null;
+let Browser = new puppeteer.Browser();
 const maxDeep = 0;// 最深递归层数
 
 async function start(title) {
   Browser = await puppeteer.launch();
 
-  for(let index=5565; index<words.length; index++) {
+  for(let index=6163; index<words.length; index++) {
     await convertToPDF(Browser, words[index]);
     console.log('第', index);
   }  
@@ -145,10 +145,13 @@ async function convertToPDF(browser, title, url, parentTitle, deep = 0) {
   });  
 }
 
-async function getPageMeta(page) {
+async function getPageMeta(page = new puppeteer.Page()) {
   return new Promise(async (resolve, reject)=>{
       setTimeout(async () => {
         try {
+
+          //await page.waitForNavigation();
+
           const meta = await page.evaluate(async ()=>{
             let obj = {
               links: []
