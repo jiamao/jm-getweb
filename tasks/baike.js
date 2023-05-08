@@ -6,16 +6,18 @@ const words = fs.readFileSync('data/baike/words.dict', {
   encoding: 'utf8'
 }).split('\n');
 
+let Browser = null;
 const maxDeep = 0;// 最深递归层数
 
 async function start(title) {
-  const browser = await puppeteer.launch();
+  Browser = await puppeteer.launch();
 
-  for(const word of words) {
-    await convertToPDF(browser, word);
+  for(let index=1461; index<words.length; index++) {
+    await convertToPDF(Browser, words[index]);
+    console.log('第', index);
   }  
 
-  await browser.close();
+  await Browser.close();
 
   fs.writeFileSync('data/baike/web.json', JSON.stringify(webCache));
 }
@@ -25,6 +27,11 @@ async function convertToPDF(browser, title, url, parentTitle, deep = 0) {
   if(deep > maxDeep) return null; // 限制层级
   if(!title) return null;
   if(!url) url = `https://baike.baidu.com/item/${encodeURIComponent(title)}`;
+
+  if(title.includes('排名') || title.includes('排行榜') || title.includes('100强') || title.includes('500强') || title.includes('《') || /\d+年/.test(title)) {
+    console.log(title, '不合规则，跳过');
+    return null;
+  }
 
   const titlePath = title.replace(/["'\.\/\\]/g, '');
   const htmlName = `data/baike/${titlePath}.html`;
@@ -47,16 +54,20 @@ async function convertToPDF(browser, title, url, parentTitle, deep = 0) {
 
   return new Promise(async (resolve, reject) => {
     try { 
-      const page = await browser.newPage();
+      const page = await Browser.newPage();
       await page.goto(url, {waitUntil: 'networkidle0'});  
 
       let meta = await getPageMeta(page);      
 
-      /*if(meta.error == '触发了百度验证') {
-        await browser.close();
-        const browser = await puppeteer.launch();
+      // 触发了验证，则新开了个进程来处理
+      if(meta.error == '触发了百度验证') {
+        await Browser.close();
+        Browser = await puppeteer.launch();
+        const res = await convertToPDF(Browser, title, url, parentTitle, deep);
+        resolve(res);
+        return;
+      }
 
-      }*/
       if(meta.error) {
         console.log(meta.url, meta.error);
         throw meta.error;
@@ -100,7 +111,7 @@ async function convertToPDF(browser, title, url, parentTitle, deep = 0) {
             if(meta.subLemmaList) {
               console.log('多议词抓取', link);
             }
-            await convertToPDF(browser, link.name.trim(), link.href, title, meta.subLemmaList?0:(deep+1));            
+            await convertToPDF(Browser, link.name.trim(), link.href, title, meta.subLemmaList?0:(deep+1));            
           }
         }
 
@@ -135,93 +146,93 @@ async function convertToPDF(browser, title, url, parentTitle, deep = 0) {
 
 async function getPageMeta(page) {
   return new Promise(async (resolve)=>{
-    setTimeout(async () => {
-      const meta = await page.evaluate(async ()=>{
-        let obj = {
-          links: []
-        };
-        try {
-          window.scrollTo(0, document.body.scrollHeight);
-
-          function deleteElement(selector) {
-            document.querySelector(selector) && document.querySelector(selector).remove();
-          }
-
-          
-          deleteElement('.lemmaWgt-searchHeader');
-          deleteElement('.header-wrapper');
-          deleteElement('.navbar-wrapper');
-          deleteElement('.side-content');
-          deleteElement('.top-tool');
-          deleteElement('.new-bdsharebuttonbox');
-          deleteElement('.tashuo-bottom');
-          deleteElement('.after-content');
-          deleteElement('.wgt-footer-main');
-          deleteElement('.btn-list');
-          document.querySelector('.main-content') && (document.querySelector('.main-content').style.width = '95%');
-          document.querySelector('.content') && (document.querySelector('.content').style.width = '90%');
-          
-          obj = {
-            url: location.href,
-            text: document.body.innerText,
-            html: document.body.parentElement.innerHTML,
-            head: document.head.innerHTML,
-            title: document.title,
-            categories: [],
+      setTimeout(async () => {
+        const meta = await page.evaluate(async ()=>{
+          let obj = {
             links: []
           };
+          try {
+            window.scrollTo(0, document.body.scrollHeight);
 
-          // 多义词列表
-          const subLemmaList = document.querySelector('.lemmaWgt-subLemmaListTitle');
-          if(subLemmaList && subLemmaList.innerText.indexOf('这是一个多义词，请在下列义项上选择浏览') > -1) {
-            obj.subLemmaList = true;
-          }
+            function deleteElement(selector) {
+              document.querySelector(selector) && document.querySelector(selector).remove();
+            }
 
-          // 错误的页
-          if(obj.url.indexOf('error.html') > -1) {
-            obj.error = '词条不存在';
+            
+            deleteElement('.lemmaWgt-searchHeader');
+            deleteElement('.header-wrapper');
+            deleteElement('.navbar-wrapper');
+            deleteElement('.side-content');
+            deleteElement('.top-tool');
+            deleteElement('.new-bdsharebuttonbox');
+            deleteElement('.tashuo-bottom');
+            deleteElement('.after-content');
+            deleteElement('.wgt-footer-main');
+            deleteElement('.btn-list');
+            document.querySelector('.main-content') && (document.querySelector('.main-content').style.width = '95%');
+            document.querySelector('.content') && (document.querySelector('.content').style.width = '90%');
+            
+            obj = {
+              url: location.href,
+              text: document.body.innerText,
+              html: document.body.parentElement.innerHTML,
+              head: document.head.innerHTML,
+              title: document.title,
+              categories: [],
+              links: []
+            };
+
+            // 多义词列表
+            const subLemmaList = document.querySelector('.lemmaWgt-subLemmaListTitle');
+            if(subLemmaList && subLemmaList.innerText.indexOf('这是一个多义词，请在下列义项上选择浏览') > -1) {
+              obj.subLemmaList = true;
+            }
+
+            // 错误的页
+            if(obj.url.indexOf('error.html') > -1) {
+              obj.error = '词条不存在';
+              return obj;
+            }
+
+            if(document.title.indexOf('百度百科-验证') > -1) {
+              obj.error = '触发了百度验证';
+              return obj;
+            }
+
+          // 分类
+          const cats = document.querySelectorAll('ul.polysemantList-wrapper li');
+            for(const c of cats) {
+                const name = c.innerText.replace('▪', '');
+                name && obj.categories.push(name);
+            }
+
+            const links = document.querySelectorAll('a');
+            for(const m of links) {
+                const href = m.href;
+                if(href) {
+                  const name = m.getAttribute('data-lemmatitle') || m.text;
+                  if(href.indexOf(location.pathname) > 0 && href.indexOf(location.pathname + '/') < 0) continue;
+                  if(href.indexOf(location.origin + '/item/') < 0) continue;
+                  if(name.indexOf('帮助中心') > -1 || !/^[a-zA-Z0-9_：:\-\%\.\u4e00-\u9fa5]*$/.test(name)) continue;
+
+                  obj.links.push({
+                    href,
+                    name: name
+                  });
+                }
+            }
+
+            deleteElement('.before-content');
+
+            return obj;  
+        }
+        catch(e) {
+            console.log(e);
+            obj.error = e.message;
             return obj;
-          }
-
-          if(document.title.indexOf('百度百科-验证') > -1) {
-            obj.error = '触发了百度验证';
-            return obj;
-          }
-
-        // 分类
-        const cats = document.querySelectorAll('ul.polysemantList-wrapper li');
-          for(const c of cats) {
-              const name = c.innerText.replace('▪', '');
-              name && obj.categories.push(name);
-          }
-
-          const links = document.querySelectorAll('a');
-          for(const m of links) {
-              const href = m.href;
-              if(href) {
-                const name = m.getAttribute('data-lemmatitle') || m.text;
-                if(href.indexOf(location.pathname) > 0 && href.indexOf(location.pathname + '/') < 0) continue;
-                if(href.indexOf(location.origin + '/item/') < 0) continue;
-                if(name.indexOf('帮助中心') > -1 || !/^[a-zA-Z0-9_：:\-\%\.\u4e00-\u9fa5]*$/.test(name)) continue;
-
-                obj.links.push({
-                  href,
-                  name: name
-                });
-              }
-          }
-
-          deleteElement('.before-content');
-
-          return obj;  
-      }
-      catch(e) {
-          console.log(e);
-          obj.error = e.message;
-          return obj;
-      }
-    });
-    resolve(meta);
+        }
+      });
+      resolve(meta);
     }, 500);      
   });
 }
