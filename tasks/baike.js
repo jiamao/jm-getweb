@@ -17,10 +17,10 @@ async function start(title) {
   
   Browser = await puppeteer.launch();
 
-  const start = 9914;
+  const start = 19262;
   const end = 50000;
 
-  //const start = 51319;
+ // const start = 58451;
   //const end = 111826;
 
   for(let index=start; index<end; index++) {
@@ -47,7 +47,7 @@ async function convertToPDF(browser, title, url, parentTitle, deep = 0) {
   // 是否存在地名检查
   for(const c of cities) {
     if(c && title.includes(c)) {
-      console.log(`包含地名：${c}， 跳过`);
+      console.log(`${title} 包含地名：${c}， 跳过`);
       return null;
     }
   }
@@ -100,6 +100,9 @@ async function convertToPDF(browser, title, url, parentTitle, deep = 0) {
 
       // 多义词不保存
       meta && !meta.subLemmaList && fs.writeFile(htmlName, meta.html, (err)=>{
+        err && console.log(err);
+      });
+      meta && !meta.subLemmaList && fs.writeFile(`data/baike/${titlePath}.txt`, meta.text, (err)=>{
         err && console.log(err);
       });
 
