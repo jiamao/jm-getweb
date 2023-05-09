@@ -17,10 +17,10 @@ async function start(title) {
   
   Browser = await puppeteer.launch();
 
-  const start = 19262;
+  const start = 19790;
   const end = 50000;
 
- // const start = 58451;
+  //const start = 58905;
   //const end = 111826;
 
   for(let index=start; index<end; index++) {
@@ -207,6 +207,7 @@ async function getPageMeta(page = new puppeteer.Page()) {
               deleteElement('.after-content');
               deleteElement('.wgt-footer-main');
               deleteElement('.btn-list');
+              deleteElement('#J-second-wrapper');
               document.querySelector('.main-content') && (document.querySelector('.main-content').style.width = '95%');
               document.querySelector('.content') && (document.querySelector('.content').style.width = '90%');
               
