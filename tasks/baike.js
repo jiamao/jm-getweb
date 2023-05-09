@@ -1,18 +1,29 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
+const addressMap = require('cn-region');
+
+// 地名
+const cities = Object.keys(addressMap.name);
 
 const webCache = JSON.parse(fs.readFileSync('data/baike/web.json'));
 const words = fs.readFileSync('data/baike/words.dict', {
   encoding: 'utf8'
 }).split('\n');
 
-let Browser = new puppeteer.Browser();
+let Browser = null;
 const maxDeep = 0;// 最深递归层数
 
 async function start(title) {
+  
   Browser = await puppeteer.launch();
 
-  for(let index=6163; index<words.length; index++) {
+  const start = 9914;
+  const end = 50000;
+
+  //const start = 51319;
+  //const end = 111826;
+
+  for(let index=start; index<end; index++) {
     await convertToPDF(Browser, words[index]);
     console.log('第', index);
   }  
@@ -28,9 +39,17 @@ async function convertToPDF(browser, title, url, parentTitle, deep = 0) {
   if(!title) return null;
   if(!url) url = `https://baike.baidu.com/item/${encodeURIComponent(title)}`;
 
-  if(title.includes('排名') || title.includes('排行榜') || title.includes('100强') || title.includes('500强') || title.includes('ST中') || title.includes('《') || /\d+年/.test(title)) {
+  if(title.includes('排名') || title.includes('排行榜') || title.includes('100强') || title.includes('500强') || title.includes('ST中') || title.includes('《') || /\d+年/.test(title) || title.includes('有限公司')) {
     console.log(title, '不合规则，跳过');
     return null;
+  }
+
+  // 是否存在地名检查
+  for(const c of cities) {
+    if(c && title.includes(c)) {
+      console.log(`包含地名：${c}， 跳过`);
+      return null;
+    }
   }
 
   const titlePath = title.replace(/["'\.\/\\]/g, '');
@@ -53,14 +72,18 @@ async function convertToPDF(browser, title, url, parentTitle, deep = 0) {
   console.log('start', title, url);
 
   return new Promise(async (resolve, reject) => {
+    let page = null;
     try { 
-      const page = await Browser.newPage();
+      page = await Browser.newPage();
       await page.goto(url, {waitUntil: 'networkidle0'});  
 
       let meta = await getPageMeta(page);      
 
       // 触发了验证，则新开了个进程来处理
       if(meta.error == '触发了百度验证') {
+
+        page.close();
+
         console.log(meta.url, meta.error);
         Browser.close();
         Browser = await puppeteer.launch();
@@ -70,6 +93,7 @@ async function convertToPDF(browser, title, url, parentTitle, deep = 0) {
       }
 
       if(meta.error) {
+
         console.log(meta.url, meta.error);
         throw meta.error;
       }
@@ -80,8 +104,11 @@ async function convertToPDF(browser, title, url, parentTitle, deep = 0) {
       });
 
       if(meta && !meta.url.startsWith('https://baike.baidu.com/item/')) {
+
+        page.close();
+
         console.log('302到了错误的地址,', meta.url);
-        resolve(null);
+        resolve(page);
         return;
       }
       //pageInfo.categories = meta.categories;
@@ -116,7 +143,7 @@ async function convertToPDF(browser, title, url, parentTitle, deep = 0) {
           }
         }
 
-        if(!meta.loading) resolve(meta);
+        if(!meta.loading) resolve(page);
         else meta.loading = false;
 
       }, 10);
@@ -129,18 +156,20 @@ async function convertToPDF(browser, title, url, parentTitle, deep = 0) {
         else {
           console.log('多义词', title);
         }
-        await page.close();
+        page.close();
 
-        if(!meta.loading) resolve(meta);
+        if(!meta.loading) resolve(page);
         else meta.loading = false;
 
-      }, 500);
+      }, 200);
 
       
     }
     catch(e) {
       console.error(e);
-      resolve(null);
+      page && page.close();
+
+      resolve(page);
     }
   });  
 }
