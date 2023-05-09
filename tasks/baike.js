@@ -54,6 +54,7 @@ async function convertToPDF(browser, title, url, parentTitle, deep = 0) {
 
   const titlePath = title.replace(/["'\.\/\\]/g, '');
   const htmlName = `data/baike/${titlePath}.html`;
+  const txtName = `data/baike/${titlePath}.txt`;
   const pdfName = `data/baike/${titlePath}.pdf`;
   if(fs.existsSync(htmlName)) {
     console.log(title , '已经抓取过，跳过', htmlName);
@@ -102,7 +103,7 @@ async function convertToPDF(browser, title, url, parentTitle, deep = 0) {
       meta && !meta.subLemmaList && fs.writeFile(htmlName, meta.html, (err)=>{
         err && console.log(err);
       });
-      meta && !meta.subLemmaList && fs.writeFile(`data/baike/${titlePath}.txt`, meta.text, (err)=>{
+      meta && !meta.subLemmaList && fs.writeFile(txtName, meta.text, (err)=>{
         err && console.log(err);
       });
 
