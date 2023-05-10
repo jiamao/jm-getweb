@@ -17,10 +17,10 @@ async function start(title) {
   
   Browser = await puppeteer.launch();
 
-  const start = 19790;
+  const start = 49077;
   const end = 50000;
 
-  //const start = 58905;
+  //const start = 91686;
   //const end = 111826;
 
   for(let index=start; index<end; index++) {
