@@ -17,11 +17,8 @@ async function start(title) {
   
   Browser = await puppeteer.launch();
 
-  const start = 49077;
-  const end = 50000;
-
-  //const start = 91686;
-  //const end = 111826;
+  const start = 92838;
+  const end = 111826;
 
   for(let index=start; index<end; index++) {
     await convertToPDF(Browser, words[index]);
