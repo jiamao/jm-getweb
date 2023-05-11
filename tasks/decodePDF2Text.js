@@ -10,11 +10,17 @@ async function start() {
 
   const files = fs.readdirSync(path.resolve(__dirname, '../data/baike/'));
 
-    for(const f of files) {
+    for(let i=0; i<files.length; i++) {
+      const f = files[i];
         const ext = path.extname(f);
         if(ext !== '.html') continue;
-        
-        await convertToPDF(path.resolve(__dirname, '../data/baike/' + f));
+
+        console.log(`${i}/${files.length}`, f);
+
+        const txtName = f.replace(/\.html$/, '.txt');
+        if(files.includes(txtName)) continue;
+
+        await convertToPDF(path.resolve(__dirname, '../data/baike/' + f), txtName);
     }
   await Browser.close();
 }
@@ -26,10 +32,6 @@ async function convertToPDF(file) {
   console.log(file, filename);
 
   const txtName = `data/baike/${filename.replace(/\.html$/, '.txt')}`;
-  if(fs.existsSync(txtName)) {
-    console.log(file , '已经转换过，跳过', txtName);
-    return null;
-  }
 
   return new Promise(async (resolve, reject) => {
     let page = null;

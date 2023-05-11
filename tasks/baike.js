@@ -41,14 +41,6 @@ async function convertToPDF(browser, title, url, parentTitle, deep = 0) {
     return null;
   }
 
-  // 是否存在地名检查
-  for(const c of cities) {
-    if(c && title.includes(c)) {
-      console.log(`${title} 包含地名：${c}， 跳过`);
-      return null;
-    }
-  }
-
   const titlePath = title.replace(/["'\.\/\\]/g, '');
   const htmlName = `data/baike/${titlePath}.html`;
   const txtName = `data/baike/${titlePath}.txt`;
@@ -57,6 +49,16 @@ async function convertToPDF(browser, title, url, parentTitle, deep = 0) {
     console.log(title , '已经抓取过，跳过', htmlName);
     return null;
   }
+
+  // 是否存在地名检查
+  for(const c of cities) {
+    if(c && title.includes(c)) {
+      console.log(`${title} 包含地名：${c}， 跳过`);
+      return null;
+    }
+  }
+
+  
   
   // 缓存
   /*
