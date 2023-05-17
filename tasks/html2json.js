@@ -10,27 +10,35 @@ async function start() {
 
   const files = fs.readdirSync(path.resolve(__dirname, '../data/baike/'));
 
+  const whites = fs.readFileSync(path.resolve(__dirname, '../data/baike_md/list.txt'), 'utf8');
+
+    let promiseQueue = [];
     for(let i=0; i<files.length; i++) {
       const f = files[i];
         const ext = path.extname(f);
-        if(ext !== '.html') continue;
+        if(ext !== '.html' || !whites.includes(f)) continue;
 
         console.log(`${i}/${files.length}`, f);
+    
+        const mdfile = `data/baike_md/${f.replace(/\.html$/, '.md')}`;
+        if(fs.existsSync(mdfile)) continue;
 
-        const txtName = f.replace(/\.html$/, '.md');        
+        const p = convertToPDF(path.resolve(__dirname, '../data/baike/' + f), mdfile);
+        promiseQueue.push(p);
 
-        await convertToPDF(path.resolve(__dirname, '../data/baike/' + f), txtName);
+        if(promiseQueue.length >= 10 || i >= files.length-1) {
+            await Promise.all(promiseQueue);
+            promiseQueue = [];
+        }
     }
   await Browser.close();
 }
 start();
 
-async function convertToPDF(file) {
+async function convertToPDF(file, txtName) {
 
   const filename = path.basename(file);
   console.log(file, filename);
-
-  const txtName = `data/baike_md/${filename.replace(/\.html$/, '.md')}`;
 
   return new Promise(async (resolve, reject) => {
     let page = null;
@@ -64,7 +72,7 @@ async function convertToPDF(file) {
 
 async function getPageMeta(page = new puppeteer.Page()) {
   return new Promise(async (resolve, reject)=>{
-      setTimeout(async () => {
+      //setTimeout(async () => {
         try {
 
           //await page.waitForNavigation();
@@ -133,6 +141,6 @@ async function getPageMeta(page = new puppeteer.Page()) {
         console.log(e);
         reject(e);
       }
-    }, 50);      
+    //}, 0);      
   });
 }
