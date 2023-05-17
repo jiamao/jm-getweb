@@ -93,9 +93,9 @@ async function getPageMeta(page = new puppeteer.Page()) {
               let md = '';
 
               const wrapper = document.querySelector('.content-wrapper');
-              const h1 = getElementText('.J-lemma-title', wrapper);
+              const h1 = getElementText('.J-lemma-title');
               md += `# ${h1}`;
-              const desc = getElementText('.lemma-desc', wrapper);
+              const desc = getElementText('.lemma-desc');
               md += `\n${desc}`;
 
               const summary = getElementText('.lemma-summary.J-summary', wrapper);
