@@ -23,13 +23,13 @@ async function start() {
         const mdfile = `data/baike_md/${f.replace(/\.html$/, '.md')}`;
         if(fs.existsSync(mdfile)) continue;
 
-        const p = convertToPDF(path.resolve(__dirname, '../data/baike/' + f), mdfile);
-        promiseQueue.push(p);
+        await convertToPDF(path.resolve(__dirname, '../data/baike/' + f), mdfile);
+        /*promiseQueue.push(p);
 
         if(promiseQueue.length >= 10 || i >= files.length-1) {
             await Promise.all(promiseQueue);
             promiseQueue = [];
-        }
+        }*/
     }
   await Browser.close();
 }
