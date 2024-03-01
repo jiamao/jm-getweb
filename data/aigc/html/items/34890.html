@@ -1,0 +1,1525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI Chalk写论文,只需输入标题,自动完成毕业论文,全部AI生成,自带查重报告。AI Chalk写论文,论文格式规范,结构完整,包含摘要、目录、参考文献,符合学校毕业论文要求。">
+  <meta name="keywords" content="AI Chalk,AI论文" />
+  <title>AI Chalk_10分钟生成高质量论文</title>
+  <link rel="icon" href="/assets/img/brand/favicon.ico" type="image/png">
+  <link rel="stylesheet" href="/assets/tpl_2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/tpl_2/css/style.css">
+  
+  <style>
+    .nava {
+        color: #212529;
+        text-decoration: none;
+    }
+    .nava:hover {
+        color: #212529;
+        text-decoration: none;
+    }
+    .psys {
+        width:100px;
+        text-align:center;
+    }
+.product {
+    width: 500px;
+}
+  </style>
+  
+</head>
+<body>
+  <div class="box">
+    <div class="head">
+      <h1><a href="/" style="text-decoration: none;">AI Chalk</a></h1>
+      <button id="headingOne" class="idxBtn btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <img src="/assets/tpl_2/images/btn.svg" alt="">
+      </button>
+      <div id="collapseOne" class="collapse" aria-labelledby="headingOne">
+        <div class="card-body">
+          <!-- <div>
+            <img src="/assets/tpl_2/images/u7.svg" alt="">
+            <img src="/assets/tpl_2/images/2.svg" alt="">
+            <p>热门应用</p>
+          </div>
+          <div>
+            <img src="/assets/tpl_2/images/3.svg" alt="">
+            <p>智能写作</p>
+          </div>
+          <div>
+            <img src="/assets/tpl_2/images/4.svg" alt="">
+            <p>智能作画</p>
+          </div> -->
+          <a href="/ai/report" class="nava" target="_blank">
+          <div>
+            <img src="/assets/tpl_2/images/6.svg" alt="">
+            <p>查询结果</p>
+          </div>
+          </a>
+          
+          <a href="/ai/reportdemo" class="nava" target="_blank">
+          <div>
+            <img src="/assets/tpl_2/images/5.svg" alt="">
+            <p>范文样例</p>
+          </div>
+          </a>
+          
+          <!-- <div>
+            <img src="/assets/tpl_2/images/7.svg" alt="">
+            <a href="/ai/faq" class="nava" target="_blank"><p>常见问题</p></a>
+          </div> -->
+                    <a href="/ai/fx" class="nava" target="_blank">
+          <div>
+            <img src="/assets/tpl_2/images/8.svg" alt="">
+            <p>分享得提成</p>
+          </div>
+          </a>
+                  </div>
+      </div>
+      <div class="notice">
+        <img src="/assets/tpl_2/images/1.svg" alt="">
+        <p>方便下次访问，收藏我们吧！（windows 快捷键：<span>Ctrl + D</span>  Mac快捷键：<span>Command + D</span> ）</p>
+      </div>
+    </div>
+    <div class="main">
+      <div class="nav">
+        <div class="apply">
+          <!-- <div>
+            <img src="/assets/tpl_2/images/u7.svg" alt="">
+            <img src="/assets/tpl_2/images/2.svg" alt="">
+            <a href="/" class="nava" target="_blank"><p>热门应用</p></a>
+          </div> -->
+          
+          <a href="/ai/form/type/27" class="nava" target="_blank">
+          <div>
+            <img src="/assets/tpl_2/images/3.svg" alt="">
+            <!-- 透明图标 -->
+            <img src="/assets/tpl_2/images/2.svg" alt=""> 
+            <p>万能写作</p>
+          </div>
+          </a>
+          
+          <a href="/ai/form/type/42" class="nava" target="_blank">
+          <div>
+            <img src="/assets/tpl_2/images/4.svg" alt="">
+            <!-- 透明图标 -->
+            <img src="/assets/tpl_2/images/2.svg" alt=""> 
+            <p>智能作画</p>
+          </div>
+          </a>
+          
+          
+          <a href="/ai/form/type/27" class="nava" target="_blank">
+          <div>
+            <img src="/assets/tpl_2/images/3.svg" alt="">
+            <!-- 透明图标 -->
+            <img src="/assets/tpl_2/images/2.svg" alt=""> 
+            <p>职业顾问</p>
+          </div>
+          </a>
+        </div>
+        <div class="apply1">
+          <a href="/ai/reportdemo" class="nava" target="_blank">
+          <div>
+            <img src="/assets/tpl_2/images/5.svg" alt="">
+            <!-- 透明图标 -->
+            <img src="/assets/tpl_2/images/2.svg" alt=""> 
+            <p>范文样例</p>
+          </div>
+          </a>
+          
+          <a href="/ai/report" class="nava" target="_blank">
+          <div>
+            <img src="/assets/tpl_2/images/6.svg" alt="">
+            <!-- 透明图标 -->
+            <img src="/assets/tpl_2/images/2.svg" alt=""> 
+            <p>查询结果</p>
+          </div>
+          </a>
+        </div>
+        <span class="line"></span>
+        <div class="apply2">
+          
+          <div>
+            <img src="/assets/tpl_2/images/7.svg" alt="">
+            <a href="/ai/faq" class="nava" target="_blank"><p>常见问题</p></a>
+          </div>
+                    <div>
+            <img src="/assets/tpl_2/images/8.svg" alt="">
+            <a href="/ai/fx" class="nava" target="_blank"><p>分享返现</p></a>
+          </div>
+                    
+          <div>
+            <img src="/assets/tpl_2/images/9.svg" alt="">
+            <p>联系我们</p>
+            <div class="ctt">
+              <img src="/assets/img/wxkf.png" alt="">
+              <h4>微信客服</h4>
+              <p>服务时间：9:00-22:00</p>
+            </div>
+          </div>
+        </div>
+        <div class="foot">
+          <p style="color: #c9cfd9">Copyright &copy; 2024.</p>
+          <p style="color: #c9cfd9">AI Chalk All rights reserved</p>
+          <a href="https://beian.miit.gov.cn" class="footer-link" target="_blank" style="color: #c9cfd9">京ICP备19048464号-5</a>
+        </div>
+      </div>
+      <div class="matter">
+        <div class="banner">
+          <img src="/assets/tpl_2/images/banner.png" alt="">
+          <div class="bannerBox">
+            <h1>你只负责输入标题，10分钟帮你搞定高质量范文</h1>
+            <h3>用AI写作 让你内容创作效率提高10倍</h3>
+            <div class="seek">
+              <div>
+                <!-- <img src="/assets/tpl_2/images/10.svg" alt=""> -->
+                <p class="seekText">智能范文</p>
+                <input type="text" id="title" placeholder="输入完整的标题，获得更好的生成效果 (5-50字内）">
+                <!-- <div class="seekBox">
+                  <span class="seekType">开题报告</span>
+                  <span class="seekType">智能范文</span>
+                  <span class="seekType">文献综述</span>
+                </div> -->
+              </div>
+              <a href="javascript:;" onclick="showPay()">立即生成</a>
+            </div>
+            <div class="product">
+              <a href="/ai/form/type/5" target="_blank" style="text-decoration: none">
+              <div class="psys">
+                <img src="/assets/tpl_2/images/p1.svg" alt="">
+                <p>开题报告</p>
+              </div class="psys">
+              </a>
+              
+              <a href="/ai/form/type/46" target="_blank" style="text-decoration: none">
+              <div class="psys">
+                <img src="/assets/tpl_2/images/p2.svg" alt="">
+                <p>文献综述</p>
+              </div>
+              </a>
+              
+              <a href="/ai/form/type/6" target="_blank" style="text-decoration: none">
+              <div class="psys">
+                <img src="/assets/tpl_2/images/p3.svg" alt="">
+                <p>任务书</p>
+              </div>
+              </a>
+              
+              <a href="/ai/form/type/44" target="_blank" style="text-decoration: none">
+              <div class="psys">
+                <img src="/assets/tpl_2/images/p2.svg" alt="">
+                <p>调查报告</p>
+              </div>
+              </a>
+              
+              <a href="/ai/form/type/39" target="_blank" style="text-decoration: none">
+              <div class="psys">
+                <img src="/assets/tpl_2/images/p1.svg" alt="">
+                <p>解梦</p>
+              </div>
+              </a>
+              
+              <!-- <div class="psys">
+                <img src="/assets/tpl_2/images/p1.svg" alt="">
+                <p>AI作业范文</p>
+              </div>
+              <div class="psys">
+                <img src="/assets/tpl_2/images/p2.svg" alt="">
+                <p>AI课程范文</p>
+              </div> -->
+            </div>
+          </div>
+        </div>
+        <div class="useCentre">
+          <div>
+            <img src="/assets/tpl_2/images/u1.svg" alt="">
+            <h3>应用中心</h3>
+          </div>
+          <!-- <span></span>
+          <ul>
+            <li class="uceAct uceNav">  
+              <img src="/assets/tpl_2/images/u2.svg" alt="">
+              <p>全部</p>
+            </li>
+            <li class="uceNav">  
+              <img src="/assets/tpl_2/images/u3.svg" alt="">
+              <p>写作</p>
+            </li>
+            <li class="uceNav">  
+              <img src="/assets/tpl_2/images/u4.svg" alt="">
+              <p>报告</p>
+            </li>
+            <li class="uceNav">  
+              <img src="/assets/tpl_2/images/u5.svg" alt="">
+              <p>文案</p>
+            </li>
+            <li class="uceNav">  
+              <img src="/assets/tpl_2/images/u6.svg" alt="">
+              <p>生活</p>
+            </li>
+            <li class="uceNav">  
+              <img src="/assets/tpl_2/images/u7.svg" alt="">
+              <p>其他</p>
+            </li>
+          </ul> -->
+        </div>
+        <div class="ListTop"></div>
+        <div class="lists row lists0">
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/1" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_1.png" alt="">
+                  <h4>AI智能范文</h4>
+                </div>
+                <p style="overflow: hidden;">2万字符左右，包含封面、原创性声明、版权使用授权书、中文摘要及关键词、英文摘要及关键词、目录、正文内容、致谢、参考文献、附赠开题报告、任务书</p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>60万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/53" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_53.png" alt="">
+                  <h4>中文论文范文1万字符</h4>
+                </div>
+                <p style="overflow: hidden;">1万字符左右，包含封面、原创性声明、版权使用授权书、中文摘要及关键词、英文摘要及关键词、目录、正文内容、致谢、参考文献、附赠开题报告、任务书</p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>60万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/54" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_54.png" alt="">
+                  <h4>中文论文范文5千字符</h4>
+                </div>
+                <p style="overflow: hidden;">5千字符左右，包含封面、原创性声明、版权使用授权书、中文摘要及关键词、英文摘要及关键词、目录、正文内容、致谢、参考文献</p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>60万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/21" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_21.png" alt="">
+                  <h4>AI作业范文</h4>
+                </div>
+                <p style="overflow: hidden;">1万字符左右，包含中文摘要及关键词、正文内容、参考文献</p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>50万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/22" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_22.png" alt="">
+                  <h4>AI课程范文</h4>
+                </div>
+                <p style="overflow: hidden;">5千字符左右，仅含正文内容</p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>50万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/23" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_23.png" alt="">
+                  <h4>AI期刊范文</h4>
+                </div>
+                <p style="overflow: hidden;">1万字符左右，包含中文摘要及关键词、正文内容、参考文献</p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>50万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/48" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_48.png" alt="">
+                  <h4>AI期刊范文6千字符</h4>
+                </div>
+                <p style="overflow: hidden;">6千字符左右，包含中文摘要及关键词、引言、正文内容、结束语、参考文献</p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>50万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/52" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_52.png" alt="">
+                  <h4>AI论文范文3千字符</h4>
+                </div>
+                <p style="overflow: hidden;">3千字符左右，包含中文摘要及关键词、正文内容、参考文献</p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>50万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/5" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_5.png" alt="">
+                  <h4>开题报告</h4>
+                </div>
+                <p style="overflow: hidden;">5000字符以上，根据你的题目按照如下框架AI自动生成内容，框架：一、研究背景和意义；二、国内外研究状况综述；三、研究的主要内容及写作提纲；四、研究方法和技术路线；五、预期结果和贡献；六、研究局限性和不足；七、工作计划及进度安排；八、参考文献</p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>4万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/46" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_46.png" alt="">
+                  <h4>文献综述</h4>
+                </div>
+                <p style="overflow: hidden;">4000字符左右，根据你的题目按照如下框架AI自动生成内容，框架：摘要；前言；一、研究背景；二、国外文献综述；三、国内文献综述；四、国内外研究结论；五、英文参考文献；六、中文参考文献</p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>3.5万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/45" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_45.png" alt="">
+                  <h4>实习报告</h4>
+                </div>
+                <p style="overflow: hidden;"></p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>2万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/44" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_44.png" alt="">
+                  <h4>调查报告</h4>
+                </div>
+                <p style="overflow: hidden;"></p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>2万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/6" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_6.png" alt="">
+                  <h4>任务书</h4>
+                </div>
+                <p style="overflow: hidden;">根据你的题目按照如下框架AI自动生成内容，框架：1、题目来源；2、应完成的主要内容；3、基本要求及完成的成果形式；4、进度安排；5、参考文献</p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>3.5万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/2" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_2.png" alt="">
+                  <h4>选题推荐</h4>
+                </div>
+                <p style="overflow: hidden;">提供关键词生成选题</p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>2万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/3" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_3.png" alt="">
+                  <h4>论文摘要</h4>
+                </div>
+                <p style="overflow: hidden;">提供标题生成摘要</p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>1.5万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/49" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_49.png" alt="">
+                  <h4>研究目的</h4>
+                </div>
+                <p style="overflow: hidden;">提供标题生成研究目的</p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>1.5万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/50" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_50.png" alt="">
+                  <h4>研究意义</h4>
+                </div>
+                <p style="overflow: hidden;">提供标题生成研究意义</p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>1.5万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/51" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_51.png" alt="">
+                  <h4>研究背景</h4>
+                </div>
+                <p style="overflow: hidden;">提供标题生成研究背景</p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>1.5万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/47" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_47.png" alt="">
+                  <h4>论文引言</h4>
+                </div>
+                <p style="overflow: hidden;">提供标题生成引言</p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>1.5万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/4" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_4.png" alt="">
+                  <h4>参考文献</h4>
+                </div>
+                <p style="overflow: hidden;">提供标题生成参考文献</p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>0.5万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/7" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_7.png" alt="">
+                  <h4>论文致谢</h4>
+                </div>
+                <p style="overflow: hidden;">提供标题生成致谢</p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>1万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/9" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_9.png" alt="">
+                  <h4>提纲推荐</h4>
+                </div>
+                <p style="overflow: hidden;">提供标题生成提纲</p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>2万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/8" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_8.png" alt="">
+                  <h4>论文续写</h4>
+                </div>
+                <p style="overflow: hidden;">提供标题及内容续写</p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>5万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/13" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_13.png" alt="">
+                  <h4>答辩ppt内容</h4>
+                </div>
+                <p style="overflow: hidden;"></p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>0.6万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/29" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_29.png" alt="">
+                  <h4>文本润色</h4>
+                </div>
+                <p style="overflow: hidden;">一键帮你润色文本，让你的创作更出彩。</p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>7.5万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/30" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_30.png" alt="">
+                  <h4>文章改写</h4>
+                </div>
+                <p style="overflow: hidden;">一键改写文章。</p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>7.5万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/31" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_31.png" alt="">
+                  <h4>关键词提取</h4>
+                </div>
+                <p style="overflow: hidden;">一键提取文章或句子的关键词信息。</p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>0.9万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/32" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_32.png" alt="">
+                  <h4>文本压缩</h4>
+                </div>
+                <p style="overflow: hidden;">将文章压缩到极致。</p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>0.3万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/33" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_33.png" alt="">
+                  <h4>软文</h4>
+                </div>
+                <p style="overflow: hidden;">一键生成优化软文，写软文再也不用招编辑了。</p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>0.3万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/34" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_34.png" alt="">
+                  <h4>新媒体文章</h4>
+                </div>
+                <p style="overflow: hidden;">输入话题，能生成一篇有深度的新媒体（今日头条、百家号等）文章。</p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>0.3万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/35" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_35.png" alt="">
+                  <h4>自媒体文章</h4>
+                </div>
+                <p style="overflow: hidden;">是否还不知道自媒体文章该发点啥？快来直接生成！</p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>0.3万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/36" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_36.png" alt="">
+                  <h4>文章写作</h4>
+                </div>
+                <p style="overflow: hidden;">输入核心内容帮您快速生成文章</p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>0.3万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/24" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_24.png" alt="">
+                  <h4>PPT大纲</h4>
+                </div>
+                <p style="overflow: hidden;">填写PPT主题内容，AI自动生成PPT大纲。</p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>0.6万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/25" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_25.png" alt="">
+                  <h4>职业顾问</h4>
+                </div>
+                <p style="overflow: hidden;">了解不同行业和职位的发展前景</p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>8万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/28" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_28.png" alt="">
+                  <h4>星座解读</h4>
+                </div>
+                <p style="overflow: hidden;">一键解读你的星座</p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>1.5万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/38" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_38.png" alt="">
+                  <h4>生辰八字解析</h4>
+                </div>
+                <p style="overflow: hidden;">看看你的八字和运势</p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>1.6万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/39" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_39.png" alt="">
+                  <h4>解梦</h4>
+                </div>
+                <p style="overflow: hidden;">一键帮你解梦！</p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>1万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/40" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_40.png" alt="">
+                  <h4>姓名解析</h4>
+                </div>
+                <p style="overflow: hidden;">根据姓名以及出生日期解析</p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>1.8万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/41" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_41.png" alt="">
+                  <h4>起名</h4>
+                </div>
+                <p style="overflow: hidden;">根据出生日期判断五行，以此来取名</p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>8万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/10" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_10.png" alt="">
+                  <h4>年终总结</h4>
+                </div>
+                <p style="overflow: hidden;"></p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>0.1万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/11" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_11.png" alt="">
+                  <h4>个人总结</h4>
+                </div>
+                <p style="overflow: hidden;"></p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>0.02万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/12" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_12.png" alt="">
+                  <h4>心得体会</h4>
+                </div>
+                <p style="overflow: hidden;"></p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>0.03万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/14" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_14.png" alt="">
+                  <h4>演讲稿</h4>
+                </div>
+                <p style="overflow: hidden;">根据主题一键为你创作演讲稿。</p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>0.2万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/15" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_15.png" alt="">
+                  <h4>广告文案</h4>
+                </div>
+                <p style="overflow: hidden;">一键生成广告文案。</p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>2万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/16" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_16.png" alt="">
+                  <h4>小红书文案</h4>
+                </div>
+                <p style="overflow: hidden;">轻松创作小红书文案，玩转小红书社区～</p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>3万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/17" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_17.png" alt="">
+                  <h4>电商产品描述</h4>
+                </div>
+                <p style="overflow: hidden;"></p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>0.9万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/18" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_18.png" alt="">
+                  <h4>工作报告</h4>
+                </div>
+                <p style="overflow: hidden;"></p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>0.01万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/19" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_19.png" alt="">
+                  <h4>检讨书</h4>
+                </div>
+                <p style="overflow: hidden;"></p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>0.1万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/20" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_20.png" alt="">
+                  <h4>情书</h4>
+                </div>
+                <p style="overflow: hidden;"></p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>1万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/26" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_26.png" alt="">
+                  <h4>满分作文</h4>
+                </div>
+                <p style="overflow: hidden;">根据你提供的主题，轻松创作一篇作文</p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>0.2万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/27" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_27.png" alt="">
+                  <h4>万能助手</h4>
+                </div>
+                <p style="overflow: hidden;"></p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>7万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/37" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_37.png" alt="">
+                  <h4>高考志愿咨询</h4>
+                </div>
+                <p style="overflow: hidden;">一键为你提供专业分析，助力高考志愿报考</p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>3万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/42" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_42.png" alt="">
+                  <h4>AI作画-基础版</h4>
+                </div>
+                <p style="overflow: hidden;">根据图片内容生成图片</p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>0.1万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 list">
+            <section>
+              <a href="/ai/form/type/43" target="_blank" style="text-decoration: none">
+              <div class="listBox">
+                <div class="listTop">
+                  <img src="/assets/tpl_2/images/sys_43.png" alt="">
+                  <h4>AI作画-高级版</h4>
+                </div>
+                <p style="overflow: hidden;">根据图片内容生成图片</p>
+                <div class="listBtm">
+                  <img src="/assets/tpl_2/images/point.svg" alt="">
+                  <span>0.15万+人使用</span>
+                  <img src="/assets/tpl_2/images/r.svg" alt="">
+                </div>
+              </div>
+              </a>
+            </section>
+          </div>
+          
+                    
+          
+      </div>
+    </div>
+  </div>
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?2bf974a8db8452beebf38f2638b5d3e6";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+<script>
+var _czc = _czc || [];
+(function () {
+	var um = document.createElement("script");
+	um.src = "https://s4.cnzz.com/z.js?id=1281313591&async=1";
+	var s = document.getElementsByTagName("script")[0];
+	s.parentNode.insertBefore(um, s);
+})();
+</script>  
+<style>
+.kefudiv {
+    position: fixed;
+    z-index: 88;
+    right: 22px;
+    bottom: 140px;
+    width: 60px;
+    min-height: 100px;
+}
+
+.kefudiv ul > li {
+    width: 58px;
+    cursor: pointer;
+    height: 58px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 19px 0px rgba(0,0,0,0.02), 0px 2px 9px 0px rgba(0,0,0,0.08);
+    border-radius: 10px;
+    margin-bottom: 6px;
+    text-align: center;
+}
+.kefudiv li {
+    position: relative;
+}
+.checkQctiveLi {
+    right: -12px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 6;
+}
+.kefudiv ul > li p {
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 400;
+}
+
+.kefuwx {
+    color: #1675FF;
+}
+
+.kefuqq {
+    color: #1675FF;
+}
+.wxkefuimg {
+    width: 136px;
+    height: 150px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 23px 0px rgba(15,30,37,0.11);
+    border-radius: 10px;
+    position: absolute;
+    left: -136px;
+    display: none;
+    top: 0;
+    z-index: 8;
+}
+.qqkefuimg {
+    width: 136px;
+    height: 170px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 23px 0px rgba(15,30,37,0.11);
+    border-radius: 10px;
+    position: absolute;
+    left: -136px;
+    display: none;
+    top: 0;
+    z-index: 8;
+}
+.wxkefu:hover .wxkefuimg{
+    display: block;
+}
+.qqkefu:hover .qqkefuimg{
+    display: block;
+}
+</style>
+
+<div class="kefudiv">
+    <ul style="width: 50%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-style: normal;
+    text-decoration: none;
+    border: none;
+    font-weight: 400;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 14px;">
+    <li class="wxkefu">
+        <img src="/assets/img/wx.png" alt="" style="margin-top:12px">
+        <p class="kefuwx">微信客服</p>
+
+        <div class="wxkefuimg">
+            <img src="/assets/img/wxkf.png" alt="" style="width:110px;margin-top:15px">
+            <p>微信扫码，添加客服</p>
+        </div>
+    </li>
+    
+    <!-- <li class="qqkefu">
+        <img src="/assets/img/qq.png" alt="" style="margin-top:12px">
+        <p class="kefuqq">QQ客服</p>
+        <div class="qqkefuimg">
+            <img src="/assets/img/qqkf.png" alt="" style="width:110px">
+            <p>QQ扫码，添加客服</p>
+            <p>客服QQ：</p>
+        </div>
+    </li> -->
+    
+    </ul>
+</div>  <script src="/assets/tpl_2/js/jquery.js"></script>
+  <script src="/assets/tpl_2/js/bootstrap.js"></script>
+  <script src="/assets/tpl_2/js/idx.js"></script>
+  
+    <script>
+        function showPay() {
+            var title = $("#title").val();
+            var r = checkTitle(title);
+            if(!r) return;
+            
+            location.href = "/ai/form/type/1/title/"+encodeURIComponent(title);
+        }
+        
+        function showResult() {
+            location.href = "/ai/report";
+        }
+        
+        $('.index_check_img').click(function(){
+            $('.index_check_img').removeClass('hide');
+            $(this).addClass('hide');
+        });
+
+        function checkTitle(title) {
+            title = title.replace(/\n/g,'\r\n').replace(/^[\n\r\f\t\v\x20]+/, '').replace(/[\n\r\f\t\v\x20]+$/, '');
+            if (title.length == 0) {
+                alert('请输入标题');
+                return false;
+            }
+            var title_min_limit = 5;
+            if (title.length < title_min_limit) {
+                alert('标题不能少于'+title_min_limit+'字');
+                return false;
+            }
+            var title_max_limit = 50;
+            if (title.length > title_max_limit) {
+                alert('标题不能多于'+title_max_limit+'字');
+                return false;
+            }
+            return true;
+        }
+    </script>
+    
+</body>
+</html>
