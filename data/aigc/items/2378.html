@@ -1,0 +1,22 @@
+  <p>轩辕是国内首个开源的千亿级中文对话大模型，同时也是首个针对中文金融领域优化的千亿级开源对话大模型。轩辕在BLOOM-176B的基础上针对中文通用领域和金融领域进行了针对性的预训练与微调，它不仅可以应对通用领域的问题，也可以解答与金融相关的各类问题，为用户提供准确、全面的金融信息和建议。</p>
+<p>如果有用到轩辕相关方法和模型，请引用以下<a class="external" href="https://www.aigc.cn/favorites/ai-paper" title="查看与 论文 相关的文章" target="_blank">论文</a>：</p>
+<p><a href="https://www.aigc.cn/go/?url=aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzIzMDUuMTIwMDI%3D" rel="noopener nofollow" target="_blank" class="external">XuanYuan 2.0: A Large Chinese Financial Chat Model with Hundreds of Billions Parameters</a></p>
+<p><a href="https://www.aigc.cn/go/?url=aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzIzMDUuMTE5NTI%3D" rel="noopener nofollow" target="_blank" class="external">Self-QA: Unsupervised Knowledge Guided Language Model Alignment</a></p>
+<p><a href="https://www.aigc.cn/go/?url=aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzIzMDUuMTQ0NzE%3D" rel="noopener nofollow" target="_blank" class="external">CGCE: A Chinese Generative Chat Evaluation Benchmark for General and Financial Domains</a></p>
+<p>【热门问题】如何调用轩辕模型？</p>
+<p>由于本模型较大并不支持线上API测试，请下载模型后使用transformers库的AutoTokenizer和AutoModel进行调用。 轩辕对话模型的输入示例：</p>
+<div class="relative group repo-copy-code">
+<pre><code class="language-text">BOS_TOKEN + "Human: " + query + "\n\nAssistant: "
+</code></pre>
+<p>&nbsp;</p>
+</div>
+<p>轩辕对话模型的生成示例：</p>
+<div class="relative group repo-copy-code">
+<pre><code class="language-python">output = model.generate(**<span class="hljs-built_in">input</span>, do_sample=<span class="hljs-literal">True</span>, temperature=<span class="hljs-number">0.8</span>, top_k=<span class="hljs-number">50</span>, top_p=<span class="hljs-number">0.9</span>, early_stopping=<span class="hljs-literal">True</span>, repetition_penalty=<span class="hljs-number">1.1</span>, min_new_tokens=<span class="hljs-number">1</span>, max_new_tokens=<span class="hljs-number">256</span>)
+</code></pre>
+<p>&nbsp;</p>
+</div>
+<p>轩辕作为一个开源的中文金融对话模型，仅限于非商业用途的目的。该模型的设计初衷是为了促进学术研究、技术探索和个人学习等非商业领域的应用。我们鼓励学术界、开发者和研究人员使用轩辕来推动对话系统和金融领域的进步。其中，商业用途包括但不限于将轩辕用于产品、服务、咨询等与商业利益相关的活动。</p>
+<p>对于轩辕模型生成的言论，我们不承担任何责任。使用者在将轩辕应用于非商业用途时，需要自行承担潜在的风险，并始终保持审慎。我们建议用户在使用模型输出的信息时，进行独立的验证和判断，并根据个人的需求和情境进行决策。我们希望通过轩辕的开源发布，为学术界和开发者社区提供一个有益的工具，并推动对话系统和金融技术的发展。我们鼓励大家积极探索和创新，以进一步拓展和应用轩辕的潜力，并共同促进人工智能在金融领域的研究和实践。</p>
+<p>我们鼓励使用者在相关工作中引用轩辕，以促进知识的交流和分享，并推动中文金融对话系统的发展。轩辕的发布将为金融领域的应用和研究提供强大的支持，并为中文金融对话系统的发展做出重要贡献。我们期待看到更多的创新和应用，以提升金融服务和用户体验，并进一步推动人工智能技术在金融领域的发展。</p>
+ <div class="websitebox_wy"> <ul></ul></div><script> jQuery(document).ready(function($){ if($(".websitebox_wy>ul>li").length = 0) { console.log(11) $(".websitebox_wy").css("display","none") } $(".websitebox_haibao").click(function(){ $(".websitebox_box_shy").toggle() }) $(".websitebox_box1>.websitebox_wzt_chahao").click(function(){ $(".websitebox_box_shy").css("display","none") }) $(".websitebox_fenxiang").click(function(){ $(".websitebox_box-1").toggle() }) $(".websitebox_box1-1>.websitebox_wzt_box1-1chahao>img").click(function(){ $(".websitebox_box-1").css("display","none") }) $(".websitebox_dashan").click(function(){ console.log(111) $(".websitebox_box-2").toggle() }) $(".websitebox_box1-2>.websitebox_wzt_box1-2chahao>img").click(function(){ $(".websitebox_box-2").css("display","none") }) $(".websitebox_box2ul li").click(function(){ // Var i=$(this).index; $(this).addClass("websitebox_box2ul1").siblings("li").removeClass("websitebox_box2ul1") $(".websitebox_box2img>img").hide().eq($(this).index()).show(); })// $("#bbxshare-11").share(); jsModern.share({ qrcode: "#share-qrcode", douban: "#share-douban", qzone: "#share-qzone", sina: "#share-sina", qq: "#share-qq" }); $(".websitebox_haibaoxuanze_k").click(function() { $(".websitebox_box1").css({"width":"500px","min-height":"340px"}) $(".websitebox_imgshu").css("display","none") $(".websitebox_imgkuan").css("display","block") $(this).css({"color":"#fff","background-color":"#0066cc"}).siblings().css({"color":"#0066cc","background-color":"#fff"}) }) $(".websitebox_haibaoxuanze_s").click(function() { $(".websitebox_box1").css({"width":"350px","min-height":"394px"}) $(".websitebox_imgshu").css("display","block") $(".websitebox_imgkuan").css("display","none") $(this).css({"color":"#fff","background-color":"#0066cc"}).siblings().css({"color":"#0066cc","background-color":"#fff"}) }) }) </script> 

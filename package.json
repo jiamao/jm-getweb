@@ -10,8 +10,8 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "axios": "^1.6.7",
-    "cheerio": "^1.0.0-rc.3",
+    "axios": "latest",
+    "cheerio": "latest",
     "headless-chrome-crawler": "^1.8.0",
     "puppeteer": "^22.3.0",
     "simple-get": "^3.0.3",

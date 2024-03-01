@@ -136,29 +136,58 @@ async function convertToJTData() {
     const itemsData = [];
 
     for(const cat of categories) {
-        const newcat = {
-            name: cat.text,
-            aigcId: cat.id,
-        };
-        newcat.id = idIndex ++ ;
-        categoriesData.push(newcat);
-        console.log(newcat);
-        const newitems = await convertItemsData(newcat, items);
-        itemsData.push(...newitems);
+        const res = await convertCategoryData(cat, items);
+        categoriesData.push(res.cat);
+        itemsData.push(...res.items);
+
+
+        fs.writeFileSync(path.join(dataPath, 'categories.json'), JSON.stringify(categoriesData));
+        fs.writeFileSync(path.join(dataPath, 'items.json'), JSON.stringify(itemsData));
     }
+
 }
 
 async function saveImage(url, path) {
-    const res = await axios({
-        method: 'get',
-        url,
-        responseType: 'arraybuffer'
-    });
-    const buffer = Buffer.from(res.data, 'binary');
-    const ws = fs.createWriteStream(path);
-    ws.write(buffer);
-    ws.end();
-    return path;
+    try {
+        const res = await axios({
+            method: 'get',
+            url,
+            responseType: 'arraybuffer'
+        });
+        const buffer = Buffer.from(res.data, 'binary');
+        const ws = fs.createWriteStream(path);
+        ws.write(buffer);
+        ws.end();
+        console.log('save img', url, path);
+        return path;
+    }
+    catch(e) {
+        console.error('load img error');
+    }
+}
+
+async function convertCategoryData(cat, items) {
+    
+    const newcat = {
+        name: cat.text,
+        aigcId: cat.id,
+        children: []
+    };
+    newcat.id = idIndex ++ ;
+   
+    const newitems = await convertItemsData(newcat, items);
+    
+    if(cat.children && cat.children.length) {
+        for(const c of cat.children) {
+            const res = await convertCategoryData(c, items);
+            newcat.children.push(res.cat);
+            newitems.push(...res.items);
+        }
+    }
+    return {
+        cat: newcat,
+        items: newitems
+    }
 }
 
 // 处理分类下的所有项
@@ -171,17 +200,54 @@ async function convertItemsData(cat, items) {
         const newitem = {
             id: idIndex ++,
             name: item.name,
+            url: item.url,
             title: item.title,
             categoryId: cat.id,
             aigcId: item.id,
-        }
-        if(item.icon) {
-            newitemn.icon = 'item_icons/' + newitem.id + '.png';
-            await saveImage(item.icon, path.join(imagePAth, newitemn.icon))
-        }
+        };
+
         res.push(newitem);
+        newitem.contentUrl = 'items/' + newitem.id + '.html';
+        const contentPath = path.join(dataPath, newitem.contentUrl);
+        
+        console.log('convert item', cat.aigcId, contentPath, newitem);
+        if(fs.existsSync(contentPath)) continue;
+
+        if(item.icon) {
+            const iconPath = 'item_icons/' + newitem.id + '.png';
+            newitem.icon = 'https://jtcospublic.ciccten.com/jt-aigc/images/' + iconPath;
+            await saveImage(item.icon, path.join(imagePAth, iconPath));
+        }
+
+        const htmlPath = path.join(dataPath, 'html', 'items', item.id + '.html');
+        let html = fs.readFileSync(htmlPath, 'utf8');
+
+        const $ = cheerio.load(html);
+        const $content = $('.content-wrap .panel-body');
+        let content = $content.html();
+        if(!content) {
+            delete newitem.contentUrl;
+            continue;
+        }
+
+        const imgs = $content.find('img');
+        for(const img of imgs) {
+            const src = $(img).attr('data-src') || $(img).attr('src');
+            if(src && !src.includes('jtcospublic')) {
+                const p = 'content/' + Math.floor(Math.random()*100000 + Date.now()) + '.png';
+                const imgUrl = 'https://jtcospublic.ciccten.com/jt-aigc/images/' + p;
+                const r = await saveImage(src, path.join(imagePAth, p));
+                if(r) {
+                    content = content.replace(src, imgUrl).replace(src, imgUrl).replace(src, imgUrl).replace(src, imgUrl);
+                    html = html.replace(src, imgUrl).replace(src, imgUrl).replace(src, imgUrl).replace(src, imgUrl);
+                }
+            }
+        }
+        fs.writeFileSync(htmlPath, html);
+        fs.writeFileSync(contentPath, content);
     }
     return res;
 }
 
 
+convertToJTData();
