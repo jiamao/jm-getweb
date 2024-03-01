@@ -11,8 +11,12 @@ const maxDeep = 1;// 最深递归层数
 async function start(title) {
   const browser = await puppeteer.launch();
 
-  for(const word of words) {
-    await convertToPDF(browser, word);
+  const start = 94240;
+  const end = 111826;
+
+  for(let index=start; index<end; index++) {
+    await convertToPDF(Browser, words[index]);
+    console.log('第', index);
   }  
 
   await browser.close();

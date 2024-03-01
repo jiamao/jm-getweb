@@ -1,0 +1,766 @@
+[
+    {
+        "text": "AIGC热门工具",
+        "hash": "#term-2494",
+        "id": "2494",
+        "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=2494&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+    },
+    {
+        "text": "AIGC写作平台",
+        "hash": "#term-1908",
+        "id": "1908",
+        "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=1908&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0",
+        "children": [
+            {
+                "text": "AI写作工具",
+                "hash": "#term-1908-239",
+                "id": "239",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=239&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI论文写作",
+                "hash": "#term-1908-2336",
+                "id": "2336",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=2336&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI论文查重",
+                "hash": "#term-1908-2078",
+                "id": "2078",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=2078&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI聊天",
+                "hash": "#term-1908-242",
+                "id": "242",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=242&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI提示词",
+                "hash": "#term-1908-962",
+                "id": "962",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=962&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI内容检测",
+                "hash": "#term-1908-729",
+                "id": "729",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=729&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI公文",
+                "hash": "#term-1908-5454",
+                "id": "5454",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=5454&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI问答",
+                "hash": "#term-1908-1919",
+                "id": "1919",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=1919&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI阅读",
+                "hash": "#term-1908-5676",
+                "id": "5676",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=5676&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI搜索",
+                "hash": "#term-1908-492",
+                "id": "492",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=492&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI小说",
+                "hash": "#term-1908-5822",
+                "id": "5822",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=5822&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            }
+        ]
+    },
+    {
+        "text": "AIGC绘画平台",
+        "hash": "#term-1913",
+        "id": "1913",
+        "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=1913&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0",
+        "children": [
+            {
+                "text": "AI绘画工具",
+                "hash": "#term-1913-253",
+                "id": "253",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=253&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI绘画提示",
+                "hash": "#term-1913-1914",
+                "id": "1914",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=1914&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI绘画社区",
+                "hash": "#term-1913-1917",
+                "id": "1917",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=1917&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI绘画模型",
+                "hash": "#term-1913-2051",
+                "id": "2051",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=2051&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI-3D生成",
+                "hash": "#term-1913-594",
+                "id": "594",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=594&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI图形工作站",
+                "hash": "#term-1913-2442",
+                "id": "2442",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=2442&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI图片审核",
+                "hash": "#term-1913-4661",
+                "id": "4661",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=4661&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI搜索图片",
+                "hash": "#term-1913-2418",
+                "id": "2418",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=2418&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI素材",
+                "hash": "#term-1913-184",
+                "id": "184",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=184&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI绘本",
+                "hash": "#term-1913-5820",
+                "id": "5820",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=5820&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            }
+        ]
+    },
+    {
+        "text": "AIGC视觉平台",
+        "hash": "#term-1906",
+        "id": "1906",
+        "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=1906&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0",
+        "children": [
+            {
+                "text": "AI设计工具",
+                "hash": "#term-1906-883",
+                "id": "883",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=883&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI图像处理",
+                "hash": "#term-1906-241",
+                "id": "241",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=241&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI图像扩展",
+                "hash": "#term-1906-6053",
+                "id": "6053",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=6053&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI商品图",
+                "hash": "#term-1906-5825",
+                "id": "5825",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=5825&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI一键抠图",
+                "hash": "#term-1906-2099",
+                "id": "2099",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=2099&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI标志设计",
+                "hash": "#term-1906-5124",
+                "id": "5124",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=5124&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI空间设计",
+                "hash": "#term-1906-2134",
+                "id": "2134",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=2134&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI服装设计",
+                "hash": "#term-1906-2517",
+                "id": "2517",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=2517&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI字体设计",
+                "hash": "#term-1906-2525",
+                "id": "2525",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=2525&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI头像/艺术照",
+                "hash": "#term-1906-820",
+                "id": "820",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=820&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI艺术二维码",
+                "hash": "#term-1906-5824",
+                "id": "5824",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=5824&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            }
+        ]
+    },
+    {
+        "text": "AIGC视频平台",
+        "hash": "#term-1909",
+        "id": "1909",
+        "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=1909&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0",
+        "children": [
+            {
+                "text": "AI视频生成",
+                "hash": "#term-1909-959",
+                "id": "959",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=959&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI数字人",
+                "hash": "#term-1909-635",
+                "id": "635",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=635&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI视频后期",
+                "hash": "#term-1909-466",
+                "id": "466",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=466&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI口播视频",
+                "hash": "#term-1909-5821",
+                "id": "5821",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=5821&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI动作捕捉",
+                "hash": "#term-1909-2098",
+                "id": "2098",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=2098&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI换脸",
+                "hash": "#term-1909-2365",
+                "id": "2365",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=2365&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI博主",
+                "hash": "#term-1909-5098",
+                "id": "5098",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=5098&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI视频模型",
+                "hash": "#term-1909-2052",
+                "id": "2052",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=2052&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI字幕翻译",
+                "hash": "#term-1909-2135",
+                "id": "2135",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=2135&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "图片转视频",
+                "hash": "#term-1909-5689",
+                "id": "5689",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=5689&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            }
+        ]
+    },
+    {
+        "text": "AIGC语音平台",
+        "hash": "#term-1905",
+        "id": "1905",
+        "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=1905&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0",
+        "children": [
+            {
+                "text": "AI语音生成-文转音",
+                "hash": "#term-1905-937",
+                "id": "937",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=937&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI语音识别-音转文",
+                "hash": "#term-1905-938",
+                "id": "938",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=938&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI语音合成",
+                "hash": "#term-1905-403",
+                "id": "403",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=403&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI语音降噪",
+                "hash": "#term-1905-2136",
+                "id": "2136",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=2136&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI音乐创作",
+                "hash": "#term-1905-252",
+                "id": "252",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=252&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI音乐鉴赏",
+                "hash": "#term-1905-2050",
+                "id": "2050",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=2050&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            }
+        ]
+    },
+    {
+        "text": "AIGC办公平台",
+        "hash": "#term-1907",
+        "id": "1907",
+        "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=1907&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0",
+        "children": [
+            {
+                "text": "AI办公工具",
+                "hash": "#term-1907-700",
+                "id": "700",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=700&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI制作PPT",
+                "hash": "#term-1907-2481",
+                "id": "2481",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=2481&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI翻译",
+                "hash": "#term-1907-776",
+                "id": "776",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=776&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI思维导图",
+                "hash": "#term-1907-2309",
+                "id": "2309",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=2309&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI会议助理",
+                "hash": "#term-1907-5291",
+                "id": "5291",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=5291&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI文档处理",
+                "hash": "#term-1907-1936",
+                "id": "1936",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=1936&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI总结摘要",
+                "hash": "#term-1907-4628",
+                "id": "4628",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=4628&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI制作简历",
+                "hash": "#term-1907-3611",
+                "id": "3611",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=3611&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI公益应用",
+                "hash": "#term-1907-1940",
+                "id": "1940",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=1940&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            }
+        ]
+    },
+    {
+        "text": "AIGC学习平台",
+        "hash": "#term-1916",
+        "id": "1916",
+        "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=1916&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0",
+        "children": [
+            {
+                "text": "AIGC免费课程",
+                "hash": "#term-1916-2056",
+                "id": "2056",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=2056&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AIGC专题课程",
+                "hash": "#term-1916-4252",
+                "id": "4252",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=4252&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AIGC精选专栏",
+                "hash": "#term-1916-1515",
+                "id": "1515",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=1515&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI运营启发",
+                "hash": "#term-1916-2055",
+                "id": "2055",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=2055&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "京东AI好书推荐",
+                "hash": "#term-1916-2063",
+                "id": "2063",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=2063&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "prompt学习",
+                "hash": "#term-1916-2077",
+                "id": "2077",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=2077&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            }
+        ]
+    },
+    {
+        "text": "AIGC企业平台",
+        "hash": "#term-2359",
+        "id": "2359",
+        "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=2359&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0",
+        "children": [
+            {
+                "text": "AI企业服务",
+                "hash": "#term-2359-2045",
+                "id": "2045",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=2045&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI数字员工",
+                "hash": "#term-2359-4364",
+                "id": "4364",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=4364&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI人力资源",
+                "hash": "#term-2359-2372",
+                "id": "2372",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=2372&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI电子合同",
+                "hash": "#term-2359-2337",
+                "id": "2337",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=2337&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI法律服务",
+                "hash": "#term-2359-1330",
+                "id": "1330",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=1330&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI金融事务",
+                "hash": "#term-2359-832",
+                "id": "832",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=832&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI算力平台",
+                "hash": "#term-2359-4014",
+                "id": "4014",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=4014&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI行业协会",
+                "hash": "#term-2359-2186",
+                "id": "2186",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=2186&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI官方活动",
+                "hash": "#term-2359-2187",
+                "id": "2187",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=2187&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            }
+        ]
+    },
+    {
+        "text": "AIGC运营平台",
+        "hash": "#term-1904",
+        "id": "1904",
+        "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=1904&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0",
+        "children": [
+            {
+                "text": "AI营销工具",
+                "hash": "#term-1904-493",
+                "id": "493",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=493&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI电商增长",
+                "hash": "#term-1904-5294",
+                "id": "5294",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=5294&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI行业门户",
+                "hash": "#term-1904-2079",
+                "id": "2079",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=2079&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI流量优化",
+                "hash": "#term-1904-1467",
+                "id": "1467",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=1467&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI舆情分析",
+                "hash": "#term-1904-2351",
+                "id": "2351",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=2351&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI数据分析",
+                "hash": "#term-1904-1991",
+                "id": "1991",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=1991&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI国际导航",
+                "hash": "#term-1904-232",
+                "id": "232",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=232&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "全球大学AI",
+                "hash": "#term-1904-947",
+                "id": "947",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=947&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "大陆大学AI",
+                "hash": "#term-1904-757",
+                "id": "757",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=757&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            }
+        ]
+    },
+    {
+        "text": "AIGC开发平台",
+        "hash": "#term-1903",
+        "id": "1903",
+        "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=1903&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0",
+        "children": [
+            {
+                "text": "AI编程工具",
+                "hash": "#term-1903-922",
+                "id": "922",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=922&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI开发课堂",
+                "hash": "#term-1903-1478",
+                "id": "1478",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=1478&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI开发框架",
+                "hash": "#term-1903-2189",
+                "id": "2189",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=2189&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI开放平台",
+                "hash": "#term-1903-932",
+                "id": "932",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=932&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI开发者社区",
+                "hash": "#term-1903-138",
+                "id": "138",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=138&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI低(无)代码编程",
+                "hash": "#term-1903-1468",
+                "id": "1468",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=1468&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI-SQL数据库",
+                "hash": "#term-1903-1494",
+                "id": "1494",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=1494&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI训练模型",
+                "hash": "#term-1903-1508",
+                "id": "1508",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=1508&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            }
+        ]
+    },
+    {
+        "text": "AI 大模型平台",
+        "hash": "#term-6079",
+        "id": "6079",
+        "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=6079&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0",
+        "children": [
+            {
+                "text": "AI大语言模型",
+                "hash": "#term-6079-6080",
+                "id": "6080",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=6080&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI视觉大模型",
+                "hash": "#term-6079-6081",
+                "id": "6081",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=6081&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI视频大模型",
+                "hash": "#term-6079-6082",
+                "id": "6082",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=6082&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI语音大模型",
+                "hash": "#term-6079-6085",
+                "id": "6085",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=6085&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI多模态大模型",
+                "hash": "#term-6079-6083",
+                "id": "6083",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=6083&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI教育大模型",
+                "hash": "#term-6079-6084",
+                "id": "6084",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=6084&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI医学大模型",
+                "hash": "#term-6079-6086",
+                "id": "6086",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=6086&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI法律大模型",
+                "hash": "#term-6079-6089",
+                "id": "6089",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=6089&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI行业大模型",
+                "hash": "#term-6079-6090",
+                "id": "6090",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=6090&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI海外大模型",
+                "hash": "#term-6079-6087",
+                "id": "6087",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=6087&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            }
+        ]
+    },
+    {
+        "text": "AI 智能体平台",
+        "hash": "#term-5766",
+        "id": "5766",
+        "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=5766&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0",
+        "children": [
+            {
+                "text": "ChatGLMS",
+                "hash": "#term-5766-5767",
+                "id": "5767",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=5767&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI提示语",
+                "hash": "#term-5766-5771",
+                "id": "5771",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=5771&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            }
+        ]
+    },
+    {
+        "text": "AIGC服务平台",
+        "hash": "#term-4829",
+        "id": "4829",
+        "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=4829&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0",
+        "children": [
+            {
+                "text": "AI基础设施",
+                "hash": "#term-4829-3886",
+                "id": "3886",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=3886&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI应用接口API",
+                "hash": "#term-4829-943",
+                "id": "943",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=943&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI中文研究机构",
+                "hash": "#term-4829-1852",
+                "id": "1852",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=1852&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI海外研究机构",
+                "hash": "#term-4829-238",
+                "id": "238",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=238&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI生命科学",
+                "hash": "#term-4829-243",
+                "id": "243",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=243&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI游戏应用",
+                "hash": "#term-4829-244",
+                "id": "244",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=244&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AI安全技术",
+                "hash": "#term-4829-4050",
+                "id": "4050",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=4050&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            },
+            {
+                "text": "AIGC元宇宙",
+                "hash": "#term-4829-1109",
+                "id": "1109",
+                "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=1109&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
+            }
+        ]
+    }
+]

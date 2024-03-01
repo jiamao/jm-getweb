@@ -2,5 +2,4 @@ package-lock.json
 node_modules
 test/*.html
 data/*/**/*.pdf
-data/*/**/*.html
-data/*/**/*.txt
+data/baike_md/
