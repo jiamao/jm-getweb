@@ -3,3 +3,4 @@ node_modules
 test/*.html
 data/*/**/*.pdf
 data/baike_md/
+.DS_Store
