@@ -33,7 +33,10 @@ async function getCategories(html, lis) {
         const link = $li.find('>a');
         cat.text = link.text().trim();
         cat.hash =link.attr('href').trim();
+        cat.icon = link.find('i').attr('class');
         
+        console.log(cat);
+
         const idIndex = cat.hash.lastIndexOf('-');
         if(idIndex > -1) {
             cat.id = cat.hash.substring(idIndex + 1);
@@ -176,12 +179,16 @@ async function convertItemsData(cat, items) {
             aigcId: item.id,
         }
         if(item.icon) {
-            newitemn.icon = 'item_icons/' + newitem.id + '.png';
-            await saveImage(item.icon, path.join(imagePAth, newitemn.icon))
+            newitem.icon = 'item_icons/' + newitem.id + '.png';
+            await saveImage(item.icon, path.join(imagePAth, newitem.icon))
         }
         res.push(newitem);
     }
     return res;
 }
+
+// 抓取分类
+//start();
+convertToJTData();
 
 

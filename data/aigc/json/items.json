@@ -1,8 +1,8 @@
 [
     {
         "id": "4586",
-        "aboutUrl": "https://www.aigc.cn/sites/4586.html",
-        "url": "https://xinghuo.xfyun.cn/",
+        "aboutUrl": "https://www.aigc.cn/go/?url=aHR0cHM6Ly94aW5naHVvLnhmeXVuLmNuLz9jaD1udF9mZWJfTTdsMGVTTQ%3D%3D",
+        "url": "https://www.aigc.cn/go/?url=aHR0cHM6Ly94aW5naHVvLnhmeXVuLmNuLz9jaD1udF9mZWJfTTdsMGVTTQ%3D%3D",
         "title": "免费使用AI写作、AI绘画、AI问答、AI制作PPT等常用AI工具\n",
         "name": "GPT-4【中文平替版】",
         "icon": "https://www.aigc.cn/wp-content/uploads/2024/02/gpt4.png",
@@ -396,21 +396,21 @@
         "categoryId": "2336"
     },
     {
-        "id": "53265",
-        "aboutUrl": "https://academicideas.cn/?ic=hpgK",
-        "url": "https://academicideas.cn/?ic=hpgK",
-        "title": "AI快速论文平台--学境思源，为您的学术研究加速，一键开启您的学术灵感源！为您的学术论文便捷及安全---保驾护航！！",
-        "name": "学境思源-AI论文写作平台",
-        "icon": "https://www.aigc.cn/wp-content/uploads/2024/02/白底-方版-1.png",
-        "categoryId": "2336"
-    },
-    {
         "id": "53114",
         "aboutUrl": "https://www.aigc.cn/sites/53114.html",
         "url": "http://www.aifanwen.cn/a6s6u3702",
         "title": "AI范文写作是一个提供高效内容创作服务的平台，通过AI技术帮助用户快速生成高质量的文章和文本。",
         "name": "AI范文写作",
         "icon": "https://www.aigc.cn/wp-content/uploads/2024/02/微信截图_20240217203048.jpg",
+        "categoryId": "2336"
+    },
+    {
+        "id": "53265",
+        "aboutUrl": "https://academicideas.cn/?ic=hpgK",
+        "url": "https://academicideas.cn/?ic=hpgK",
+        "title": "AI快速论文平台--学境思源，为您的学术研究加速，一键开启您的学术灵感源！为您的学术论文便捷及安全---保驾护航！！",
+        "name": "学境思源-AI论文写作平台",
+        "icon": "https://www.aigc.cn/wp-content/uploads/2024/02/白底-方版-1.png",
         "categoryId": "2336"
     },
     {
@@ -443,10 +443,10 @@
     {
         "id": "34889",
         "aboutUrl": "https://www.aigc.cn/sites/34889.html",
-        "url": "http://aixz.freecheck.cn",
+        "url": "http://www.aifanwen.cn/a6s6u3702",
         "title": "符合本科毕业论文格式要求并附带查重报告",
         "name": "智飞猫AI智能写作",
-        "icon": "https://api.iowen.cn/favicon/aixz.freecheck.cn.png",
+        "icon": "https://api.iowen.cn/favicon/www.aifanwen.cn.png",
         "categoryId": "2336"
     },
     {
@@ -10047,7 +10047,7 @@
         "id": "52751",
         "aboutUrl": "https://www.aigc.cn/sites/52751.html",
         "url": "https://www.imgcook.com",
-        "title": "图像大厨Imgcook阿里巴巴出品的AI工具，能够将设计转换为代码，它可以帮助前端开发者提高开发效率，同时帮助公司降低人力成本。",
+        "title": "图像大厨Imgcook阿里巴巴出品...",
         "name": "图像大厨Imgcook",
         "icon": "https://www.aigc.cn/wp-content/uploads/2024/02/t01beefe03cb07239eb1.png",
         "categoryId": "922"
