@@ -231,14 +231,9 @@ async function convertItemsData(cat, items) {
         let html = fs.readFileSync(htmlPath, 'utf8');
 
         const $ = cheerio.load(html);
-        const $content = $('.content-wrap .panel-body');
-        let content = $content.html();
-        if(!content) {
-            delete newitem.contentUrl;
-            continue;
-        }
+        
 
-        const imgs = $content.find('img');
+        const imgs = $('img');
         for(const img of imgs) {
             const src = $(img).attr('data-src') || $(img).attr('src');
             if(src && !src.includes('jtcospublic')) {
@@ -246,12 +241,19 @@ async function convertItemsData(cat, items) {
                 const imgUrl = 'https://jtcospublic.ciccten.com/jt-aigc/images/' + p;
                 const r = await saveImage(src, path.join(imagePAth, p));
                 if(r) {
-                    content = content.replace(src, imgUrl).replace(src, imgUrl).replace(src, imgUrl).replace(src, imgUrl);
-                    html = html.replace(src, imgUrl).replace(src, imgUrl).replace(src, imgUrl).replace(src, imgUrl);
+                    //content = content.replace(src, imgUrl).replace(src, imgUrl).replace(src, imgUrl).replace(src, imgUrl);
+                    //html = html.replace(src, imgUrl).replace(src, imgUrl).replace(src, imgUrl).replace(src, imgUrl);
+                    $(img).attr('src', imgUrl).attr('data-src', '');
                 }
             }
         }
-        fs.writeFileSync(htmlPath, html);
+        const $content = $('.content-wrap .panel-body');
+        let content = $content.html();
+        if(!content) {
+            delete newitem.contentUrl;
+            continue;
+        }
+        fs.writeFileSync(htmlPath, $.html());
         fs.writeFileSync(contentPath, content);
     }
     return res;
