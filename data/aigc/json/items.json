@@ -18,12 +18,12 @@
         "categoryId": "2494"
     },
     {
-        "id": "19297",
-        "aboutUrl": "https://www.aigc.cn/go/?url=aHR0cDovL2RvdWNodS5haS9sb2dpbj9pbnZpdGVDb2RlPTIyMTE0MSZhbXA7Y2hhbm5lbD1jaGFubmVsX2ludml0ZQ%3D%3D",
-        "url": "https://www.aigc.cn/go/?url=aHR0cDovL2RvdWNodS5haS9sb2dpbj9pbnZpdGVDb2RlPTIyMTE0MSZhbXA7Y2hhbm5lbD1jaGFubmVsX2ludml0ZQ%3D%3D",
-        "title": "可以免费使用的AI绘画工具！",
-        "name": "触手AI绘画-4090极速出图",
-        "icon": "https://www.aigc.cn/wp-content/uploads/2023/09/a46a0-www.acgnai.com.png",
+        "id": "58468",
+        "aboutUrl": "https://www.aigc.cn/sites/58468.html",
+        "url": "https://gw.iflydocs.com/?from=aigc",
+        "title": "公文写作助手是一款依托于星火大模型技术，专为广大公文材料撰稿人打造的高效写作平台。",
+        "name": "公文写作助手",
+        "icon": "https://www.aigc.cn/wp-content/uploads/2024/01/微信截图_20240111162819.jpg",
         "categoryId": "2494"
     },
     {
@@ -63,6 +63,24 @@
         "categoryId": "2494"
     },
     {
+        "id": "28197",
+        "aboutUrl": "https://www.aigc.cn/sites/28197.html",
+        "url": "https://tusiart.com/?utm_source=aigccn&source_id=aigccn",
+        "title": "AnimateDiff功能，免费AI模型社区",
+        "name": "吐司TusiArt – 文生动图",
+        "icon": "https://www.aigc.cn/wp-content/uploads/2023/11/微信截图_20231106233630.jpg",
+        "categoryId": "2494"
+    },
+    {
+        "id": "19297",
+        "aboutUrl": "https://www.aigc.cn/go/?url=aHR0cDovL2RvdWNodS5haS9sb2dpbj9pbnZpdGVDb2RlPTIyMTE0MSZhbXA7Y2hhbm5lbD1jaGFubmVsX2ludml0ZQ%3D%3D",
+        "url": "https://www.aigc.cn/go/?url=aHR0cDovL2RvdWNodS5haS9sb2dpbj9pbnZpdGVDb2RlPTIyMTE0MSZhbXA7Y2hhbm5lbD1jaGFubmVsX2ludml0ZQ%3D%3D",
+        "title": "可以免费使用的AI绘画工具！",
+        "name": "触手AI绘画-4090极速出图",
+        "icon": "https://www.aigc.cn/wp-content/uploads/2023/09/a46a0-www.acgnai.com.png",
+        "categoryId": "2494"
+    },
+    {
         "id": "5909",
         "aboutUrl": "https://www.aigc.cn/sites/5909.html",
         "url": "https://www.chat-ppt.com/?channel=aigc.cn",
@@ -78,24 +96,6 @@
         "title": "Ai一键生成高质量PPT",
         "name": "全智能AI一键生成PPT",
         "icon": "https://www.aigc.cn/wp-content/uploads/2023/09/微信截图_20230920181801.jpg",
-        "categoryId": "2494"
-    },
-    {
-        "id": "28197",
-        "aboutUrl": "https://www.aigc.cn/sites/28197.html",
-        "url": "https://tusiart.com/?utm_source=aigccn&source_id=aigccn",
-        "title": "AnimateDiff功能，免费AI模型社区",
-        "name": "吐司TusiArt – 文生动图",
-        "icon": "https://www.aigc.cn/wp-content/uploads/2023/11/微信截图_20231106233630.jpg",
-        "categoryId": "2494"
-    },
-    {
-        "id": "27780",
-        "aboutUrl": "https://www.aigc.cn/sites/27780.html",
-        "url": "https://www.52cv.com?from=kol&share_link_id=45269d2d8727a454",
-        "title": "智能简历制作，基于GPT的简历优化和简历代写",
-        "name": "职徒简历-智能简历制作平台",
-        "icon": "https://www.aigc.cn/wp-content/uploads/2023/06/9c2b4-www.52cv.com.png",
         "categoryId": "2494"
     },
     {
@@ -369,6 +369,15 @@
         "categoryId": "2336"
     },
     {
+        "id": "53265",
+        "aboutUrl": "https://academicideas.cn/?ic=hpgK",
+        "url": "https://academicideas.cn/?ic=hpgK",
+        "title": "AI快速论文平台--学境思源，为您的学术研究加速，一键开启您的学术灵感源！为您的学术论文便捷及安全---保驾护航！！",
+        "name": "学境思源-AI论文写作平台",
+        "icon": "https://www.aigc.cn/wp-content/uploads/2024/02/白底-方版-1.png",
+        "categoryId": "2336"
+    },
+    {
         "id": "39953",
         "aboutUrl": "https://www.aigc.cn/sites/39953.html",
         "url": "https://www.ailunwenjun.com/web/start?inviter=1185151053348319232",
@@ -387,15 +396,6 @@
         "categoryId": "2336"
     },
     {
-        "id": "26768",
-        "aboutUrl": "https://www.aigc.cn/sites/26768.html",
-        "url": "http://www.openrabbit.net/?s=aigc",
-        "title": "AI论文、报告写作神器",
-        "name": "智元兔论文写作",
-        "icon": "https://www.aigc.cn/wp-content/uploads/2023/09/微信图片_20230926104045.png",
-        "categoryId": "2336"
-    },
-    {
         "id": "53114",
         "aboutUrl": "https://www.aigc.cn/sites/53114.html",
         "url": "http://www.aifanwen.cn/a6s6u3702",
@@ -405,12 +405,12 @@
         "categoryId": "2336"
     },
     {
-        "id": "53265",
-        "aboutUrl": "https://academicideas.cn/?ic=hpgK",
-        "url": "https://academicideas.cn/?ic=hpgK",
-        "title": "AI快速论文平台--学境思源，为您的学术研究加速，一键开启您的学术灵感源！为您的学术论文便捷及安全---保驾护航！！",
-        "name": "学境思源-AI论文写作平台",
-        "icon": "https://www.aigc.cn/wp-content/uploads/2024/02/白底-方版-1.png",
+        "id": "26768",
+        "aboutUrl": "https://www.aigc.cn/sites/26768.html",
+        "url": "http://www.openrabbit.net/?s=aigc",
+        "title": "AI论文、报告写作神器",
+        "name": "智元兔论文写作",
+        "icon": "https://www.aigc.cn/wp-content/uploads/2023/09/微信图片_20230926104045.png",
         "categoryId": "2336"
     },
     {
@@ -446,7 +446,7 @@
         "url": "http://www.aifanwen.cn/a6s6u3702",
         "title": "符合本科毕业论文格式要求并附带查重报告",
         "name": "智飞猫AI智能写作",
-        "icon": "https://api.iowen.cn/favicon/www.aifanwen.cn.png",
+        "icon": "https://www.aigc.cn/wp-content/uploads/2024/03/b137f-aixz.freecheck.cn.png",
         "categoryId": "2336"
     },
     {
@@ -515,7 +515,7 @@
     {
         "id": "52645",
         "aboutUrl": "https://www.aigc.cn/sites/52645.html",
-        "url": "https://ai.wolian.chat/openmao/#/ai/welcome",
+        "url": "https://ai.wolian.chat/openmao/#/?inviteCode=1764885838405046273",
         "title": "范文喵AI论文助手：毕业论文写作的好帮手，只需要输入标题和关键字就可以一分钟生成最多5万字的高质量论文范文。此外，还有免费的选题分析、论文答辩PPT、论文润色功能等。",
         "name": "范文喵",
         "icon": "https://www.aigc.cn/wp-content/uploads/2024/02/t01cf41a2f0b6d4c6961.png",
@@ -756,6 +756,15 @@
         "categoryId": "2078"
     },
     {
+        "id": "58499",
+        "aboutUrl": "https://www.aigc.cn/sites/58499.html",
+        "url": "https://xinghuo.xfyun.cn/?ch=nt_feb_M7l0eSM",
+        "title": "免费AI聊天、AI写作、AI百科、AI问答",
+        "name": "讯飞AI聊天对话",
+        "icon": "https://www.aigc.cn/wp-content/uploads/2024/02/xinghuo.jpg",
+        "categoryId": "242"
+    },
+    {
         "id": "52946",
         "aboutUrl": "https://www.aigc.cn/sites/52946.html",
         "url": "https://chat.immuseai.com",
@@ -960,15 +969,6 @@
         "title": "你的创意和帮助的合作者，在这里为你的想象力充电",
         "name": "Bard巴德",
         "icon": "https://www.aigc.cn/wp-content/uploads/2023/07/82ec8-bard.google.com.png",
-        "categoryId": "242"
-    },
-    {
-        "id": "1370",
-        "aboutUrl": "https://www.aigc.cn/sites/1370.html",
-        "url": "https://beta.character.ai",
-        "title": "神经语言模型聊天机器人Web应用程序",
-        "name": "Character.AI",
-        "icon": "https://www.aigc.cn/wp-content/uploads/2023/07/92286-beta.character.ai.png",
         "categoryId": "242"
     },
     {
@@ -1386,21 +1386,30 @@
         "categoryId": "729"
     },
     {
+        "id": "49478",
+        "aboutUrl": "https://www.aigc.cn/sites/49478.html",
+        "url": "https://gw.iflydocs.com/?from=aigc",
+        "title": "轻松写公文，高效办公务，公文写作助手是一款依托于星火大模型技术，专为广大公文材料撰稿人打造的高效写作平台。",
+        "name": "星火公文写作助手",
+        "icon": "https://www.aigc.cn/wp-content/uploads/2024/01/微信截图_20240111162819.jpg",
+        "categoryId": "5454"
+    },
+    {
+        "id": "58485",
+        "aboutUrl": "https://www.aigc.cn/sites/58485.html",
+        "url": "https://hanlinmiaobi.com",
+        "title": "翰林妙笔是一款专注于公文写作的智能AI创作平台，提供全面的写作、校对、润色及模板服务。无论是公职人员、事业单位、国企人员、还是医院、学校等机构，笔墨公文都能帮助您高效完成述职报告、调研报告、工作总结、年终总结等各类公文材料的创作。",
+        "name": "翰林妙笔",
+        "icon": "https://www.aigc.cn/wp-content/uploads/2024/03/t016afd1f943ac9ff0d1.png",
+        "categoryId": "5454"
+    },
+    {
         "id": "42093",
         "aboutUrl": "https://www.aigc.cn/sites/42093.html",
         "url": "https://xiewanla.com/login?from=aigc.cn&invite_code=NzQ3Njc0",
         "title": "高质量文稿AI写作软件，提供更实时更丰富准确的写作素材",
         "name": "米羊写完啦AI伴写",
         "icon": "https://api.iowen.cn/favicon/xiewanla.com.png",
-        "categoryId": "5454"
-    },
-    {
-        "id": "49478",
-        "aboutUrl": "https://www.aigc.cn/sites/49478.html",
-        "url": "https://gw.iflydocs.com",
-        "title": "星火公文写作助手是一款依托于讯飞星火大模型、专为广大公文材料撰稿人打造的高效公文写作平台",
-        "name": "星火公文写作助手",
-        "icon": "https://www.aigc.cn/wp-content/uploads/2024/01/微信截图_20240111162819.jpg",
         "categoryId": "5454"
     },
     {
@@ -1590,15 +1599,6 @@
         "title": "模拟公务员助理撰写公文",
         "name": "一字成文",
         "icon": "https://api.iowen.cn/favicon/www.yizigpt.com.png",
-        "categoryId": "5454"
-    },
-    {
-        "id": "42110",
-        "aboutUrl": "https://www.aigc.cn/sites/42110.html",
-        "url": "https://www.xiaoyuxiezuo.com",
-        "title": "文种可以选择：总结报告、演...",
-        "name": "小鱼AI写作",
-        "icon": "https://api.iowen.cn/favicon/www.xiaoyuxiezuo.com.png",
         "categoryId": "5454"
     },
     {
@@ -1872,6 +1872,15 @@
         "categoryId": "5676"
     },
     {
+        "id": "58475",
+        "aboutUrl": "https://www.aigc.cn/sites/58475.html",
+        "url": "https://www.aifun7.com/?from=aigc_cn",
+        "title": "推广运营必备，新一代搜索引擎，已收集1000w+数据，专注0广告网站搜索，展示【预览图】和【SEO流量数据】，支持相似站点推荐，多条件搜索。",
+        "name": "易搜站",
+        "icon": "https://www.aigc.cn/wp-content/uploads/2024/03/3fb55-www.aifun7.com.png",
+        "categoryId": "492"
+    },
+    {
         "id": "52812",
         "aboutUrl": "https://www.aigc.cn/sites/52812.html",
         "url": "https://devvcn.com/zh",
@@ -2058,15 +2067,6 @@
         "title": "在我们的 900 万个提示数据库中，到处搜索 AI 艺术家为每个人生成的视觉效果。",
         "name": "Stable Diffusion（Prompts）",
         "icon": "https://aigc.cn/wp-content/uploads/2023/02/logo.png",
-        "categoryId": "492"
-    },
-    {
-        "id": "2261",
-        "aboutUrl": "https://www.aigc.cn/sites/2261.html",
-        "url": "https://imaiger.com",
-        "title": "AI图像搜索工具是由Babatunde Lawal开发的人工智能搜索引擎，使用户能够快速准确地搜索图像。",
-        "name": "Imaiger",
-        "icon": "https://aigc.cn/wp-content/uploads/2023/02/d71db-imaiger.com.png",
         "categoryId": "492"
     },
     {
@@ -3769,6 +3769,15 @@
         "name": "Bigjpg",
         "icon": "https://api.iowen.cn/favicon/bigjpg.com.png",
         "categoryId": "6053"
+    },
+    {
+        "id": "58472",
+        "aboutUrl": "https://www.aigc.cn/sites/58472.html",
+        "url": "https://www.ihuiwa.com",
+        "title": "绘蛙-是一款简洁好用的智能图片、文案创作平台，可以通过AI生成商拍图和种草文案",
+        "name": "绘蛙",
+        "icon": "https://www.aigc.cn/wp-content/uploads/2024/03/6d7f0-www.ihuiwa.com.png",
+        "categoryId": "5825"
     },
     {
         "id": "54814",
@@ -5616,6 +5625,15 @@
         "categoryId": "5689"
     },
     {
+        "id": "58491",
+        "aboutUrl": "https://www.aigc.cn/sites/58491.html",
+        "url": "https://azure.microsoft.com/zh-cn/products/ai-services/text-to-speech",
+        "title": "一种 AI 语音功能，可将文本转换为逼真的语音。",
+        "name": "Azure AI",
+        "icon": "https://www.aigc.cn/wp-content/uploads/2024/03/93f73-azure.microsoft.com.png",
+        "categoryId": "937"
+    },
+    {
         "id": "57503",
         "aboutUrl": "https://www.aigc.cn/sites/57503.html",
         "url": "https://shengka.ai.sogou.com",
@@ -5823,30 +5841,12 @@
         "categoryId": "937"
     },
     {
-        "id": "2881",
-        "aboutUrl": "https://www.aigc.cn/sites/2881.html",
-        "url": "https://aisofiya.com",
-        "title": "Sofiya是一款由人工智能驱动的文本到语音转换器，可以快速准确地将文本合成为超过135种语言和方言的自然语音。它支持多种音频格式和频率，并有一个强大的声音工作室，以合并和增强音频效果。它是一款多功能工具，可用于客户服务聊天机器人、语音助手、教育聊天机器人、用于自然语言处理任务的文本生成等。",
-        "name": "AiSofiya",
-        "icon": "https://www.aigc.cn/wp-content/uploads/2023/02/b7312-aisofiya.com.png",
-        "categoryId": "937"
-    },
-    {
         "id": "52853",
         "aboutUrl": "https://www.aigc.cn/sites/52853.html",
         "url": "https://yueyin.zhipianbang.com",
         "title": "AI智能配音工具，独有的AI智能配音技术，更专业，完美贴近真人配音，AI模仿真人情感（怀旧、欢快、激情、伤心、抒情、惊讶等），支持多音字、停顿、整数、小数、数字等特色发音，快捷的单人、多人配音模式，海量的音色库，近千种免费音色，覆盖短视频、政企宣传、教育、动漫、有声读物、影视广告等数百行业场景。",
         "name": "悦音配音",
         "icon": "https://www.aigc.cn/wp-content/uploads/2024/02/t01fddd38c3a03f7e611.png",
-        "categoryId": "938"
-    },
-    {
-        "id": "43001",
-        "aboutUrl": "https://www.aigc.cn/sites/43001.html",
-        "url": "https://www.notta.ai/en",
-        "title": "Notta是由MIND CRUISER LIMITED推出的语音转写软件，主要针对个人使用，并在海外拥有数十万用户。这款软件具有录音实时转写、音/视频导入转写、文本多格式导出、音频标记等功能，并能实时录音时进行文字直播、插入图片等。",
-        "name": "Notta",
-        "icon": "https://www.aigc.cn/wp-content/uploads/2024/02/微信截图_20240222174620.jpg",
         "categoryId": "938"
     },
     {
@@ -5929,6 +5929,24 @@
         "name": "Whisper",
         "icon": "https://aigc.cn/wp-content/uploads/2023/02/7422b-openai.com.png",
         "categoryId": "938"
+    },
+    {
+        "id": "43001",
+        "aboutUrl": "https://www.aigc.cn/sites/43001.html",
+        "url": "https://www.notta.ai/en",
+        "title": "Notta是由MIND CRUISER LIMITED推出的语音转写软件，主要针对个人使用，并在海外拥有数十万用户。这款软件具有录音实时转写、音/视频导入转写、文本多格式导出、音频标记等功能，并能实时录音时进行文字直播、插入图片等。",
+        "name": "Notta",
+        "icon": "https://www.aigc.cn/wp-content/uploads/2024/02/微信截图_20240222174620.jpg",
+        "categoryId": "938"
+    },
+    {
+        "id": "58493",
+        "aboutUrl": "https://www.aigc.cn/sites/58493.html",
+        "url": "https://www.reecho.cn",
+        "title": "通过Reecho在数秒内克隆任意声音，并创建与真人近乎无异的、极具表现力的文本配音。",
+        "name": "Reecho AI",
+        "icon": "https://www.aigc.cn/wp-content/uploads/2024/03/9636d-www.reecho.cn.png",
+        "categoryId": "403"
     },
     {
         "id": "50226",
@@ -6100,6 +6118,15 @@
         "name": "Krisp",
         "icon": "https://aigc.cn/wp-content/uploads/2023/03/41431-krisp.ai.png",
         "categoryId": "2136"
+    },
+    {
+        "id": "58497",
+        "aboutUrl": "https://www.aigc.cn/sites/58497.html",
+        "url": "https://audioeditor.ximalaya.com",
+        "title": "专业音频制作，激发创新灵感，释放创意潜力，让你的音频创作更自由、便捷和精彩",
+        "name": "音剪",
+        "icon": "https://www.aigc.cn/wp-content/uploads/2024/03/微信截图_20240305215011.jpg",
+        "categoryId": "252"
     },
     {
         "id": "44994",
@@ -6306,15 +6333,6 @@
         "title": "Riffusion从文本提示生成音乐。尝试您最喜欢的风格，乐器如萨克斯管或小提琴，修饰符如阿拉伯语或牙买加语，流派如爵士乐或福音，声音如教堂钟声或雨声，或任何组合",
         "name": "Riffusion",
         "icon": "https://aigc.cn/wp-content/uploads/2023/03/c3305-www.riffusion.com.png",
-        "categoryId": "252"
-    },
-    {
-        "id": "1619",
-        "aboutUrl": "https://www.aigc.cn/sites/1619.html",
-        "url": "https://boomy.com",
-        "title": "创建生成音乐,与世界分享.",
-        "name": "boomy",
-        "icon": "https://aigc.cn/wp-content/uploads/2023/02/cfef4-boomy.com.png",
         "categoryId": "252"
     },
     {
@@ -7227,6 +7245,24 @@
         "categoryId": "1936"
     },
     {
+        "id": "11297",
+        "aboutUrl": "https://www.aigc.cn/sites/11297.html",
+        "url": "https://tingwu.aliyun.com/?cid=41",
+        "title": "<img src='https://www.aigc.cn/wp-content/uploads/2023/07/微信图片_20230712162653.jpg' width='128'>",
+        "name": "通义听悟-音视频转文字",
+        "icon": "https://www.aigc.cn/wp-content/uploads/2023/06/微信图片_20230601181247.png",
+        "categoryId": "4628"
+    },
+    {
+        "id": "58495",
+        "aboutUrl": "https://www.aigc.cn/sites/58495.html",
+        "url": "https://chataudio.cn",
+        "title": "ChatAudio-AI分析和总结-在线语音转文字-录音转文字-录音摘要",
+        "name": "ChatAudio",
+        "icon": "https://www.aigc.cn/wp-content/uploads/2024/03/acf11-chataudio.cn.png",
+        "categoryId": "4628"
+    },
+    {
         "id": "52602",
         "aboutUrl": "https://www.aigc.cn/sites/52602.html",
         "url": "https://minecho.com",
@@ -7242,15 +7278,6 @@
         "title": "将您的日历转换为管理会议结果和有效计划工作的工作区",
         "name": "Loopin AI",
         "icon": "https://api.iowen.cn/favicon/www.loopinhq.com.png",
-        "categoryId": "4628"
-    },
-    {
-        "id": "11297",
-        "aboutUrl": "https://www.aigc.cn/sites/11297.html",
-        "url": "https://tingwu.aliyun.com/?cid=41",
-        "title": "<img src='https://www.aigc.cn/wp-content/uploads/2023/07/微信图片_20230712162653.jpg' width='128'>",
-        "name": "通义听悟-音视频转文字",
-        "icon": "https://www.aigc.cn/wp-content/uploads/2023/06/微信图片_20230601181247.png",
         "categoryId": "4628"
     },
     {
@@ -7464,7 +7491,7 @@
         "id": "53066",
         "aboutUrl": "https://www.aigc.cn/sites/53066.html",
         "url": "https://vip.aminer.cn/sign",
-        "title": "Al手语数字人实现了文字内容的语义理解，将其翻译合成手语，并通过虚拟数字人华同学进行播报。",
+        "title": "智慧手语是一个基于高质量多类型手语语料库、全链路高精度手语翻译算法及跨模态拟人生成技术的平台。该平台致力于打造高逼真的手语播报数字人生成模型，目的是为了使听障人群能够无障碍地共享世界。",
         "name": "智慧手语",
         "icon": "https://www.aigc.cn/wp-content/uploads/2024/02/t01e2af671353cec3091.png",
         "categoryId": "1940"
@@ -11583,6 +11610,15 @@
         "categoryId": "6081"
     },
     {
+        "id": "58488",
+        "aboutUrl": "https://www.aigc.cn/sites/58488.html",
+        "url": "https://yizhenai.com/ai/index.html",
+        "title": "新壹视频大模型是国内首个聚焦视频AIGC领域的语言大模型。其依托自身AI创新技术及大数据资源沉淀，结合对行业的深度理解和认知，更能贴合视频场景，输出文本摘要、语义理解等能力。",
+        "name": "新壹视频大模型",
+        "icon": "https://www.aigc.cn/wp-content/uploads/2024/03/t014687beb98cd711641-1.png",
+        "categoryId": "6082"
+    },
+    {
         "id": "3679",
         "aboutUrl": "https://www.aigc.cn/sites/3679.html",
         "url": "https://www.microsoft.com/en-us/research/project/vall-e-x/vall-e",
@@ -11727,6 +11763,15 @@
         "categoryId": "6087"
     },
     {
+        "id": "1370",
+        "aboutUrl": "https://www.aigc.cn/sites/1370.html",
+        "url": "https://beta.character.ai",
+        "title": "神经语言模型聊天机器人Web应用程序",
+        "name": "Character.AI",
+        "icon": "https://www.aigc.cn/wp-content/uploads/2023/07/92286-beta.character.ai.png",
+        "categoryId": "6087"
+    },
+    {
         "id": "12863",
         "aboutUrl": "https://www.aigc.cn/sites/12863.html",
         "url": "https://pi.ai",
@@ -11850,6 +11895,15 @@
         "title": "右脑科技是一家成立于2022年9月的初创公司，专注于研发AI图像和视频生成技术。该公司致力于将AIGC技术应用于图像及视频领域，以AI赋能创作，让想象成为具象。",
         "name": "右脑科技",
         "icon": "https://www.aigc.cn/wp-content/uploads/2024/02/t01ee928bbda621abcc1-1.png",
+        "categoryId": "3886"
+    },
+    {
+        "id": "58481",
+        "aboutUrl": "https://www.aigc.cn/sites/58481.html",
+        "url": "https://www.ibiu.cn",
+        "title": "<img src='https://www.aigc.cn/wp-content/uploads/2024/03/biU必有小程序.jpg' width='128'>",
+        "name": "必有科技",
+        "icon": "https://www.aigc.cn/wp-content/uploads/2024/03/应用图标.jpg",
         "categoryId": "3886"
     },
     {
@@ -12048,15 +12102,6 @@
         "title": "“灵云科技 源自清华 服务全球”的发展战略",
         "name": "捷通华声—人工智能技术与服务提供商",
         "icon": "https://www.aigc.cn/wp-content/uploads/2024/02/微信截图_20240217142553.jpg",
-        "categoryId": "3886"
-    },
-    {
-        "id": "27287",
-        "aboutUrl": "https://www.aigc.cn/sites/27287.html",
-        "url": "https://deeplang.ai",
-        "title": "深言科技是一家由孙茂松教授和其学生一同创办的创业公司，致力于使用世界领先的人工智能和自然语言处理技术，为数亿脑力劳动深言科技（DeepLang AI）者和数千万组织的信息处理全流程赋能。",
-        "name": "深言科技",
-        "icon": "https://www.aigc.cn/wp-content/uploads/2024/02/db9e8-deeplang.jpg",
         "categoryId": "3886"
     },
     {

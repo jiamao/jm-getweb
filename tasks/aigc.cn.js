@@ -116,7 +116,9 @@ async function getItemDetail(itemDom) {
     const htmlPath = path.join(dataPath, 'html', 'items', item.id + '.html');
     if(!fs.existsSync(htmlPath)) {
         const itemHtml = await getPageHtml(item.aboutUrl);
-        if(itemHtml) fs.writeFileSync(htmlPath, itemHtml);
+        if(itemHtml) {
+            fs.writeFileSync(htmlPath, itemHtml);
+        }
     }
     return item;
 }
@@ -188,7 +190,7 @@ async function convertItemsData(cat, items) {
 }
 
 // 抓取分类
-//start();
+start();
 convertToJTData();
 
 
