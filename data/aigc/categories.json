@@ -3,7 +3,8 @@
         "name": "AIGC热门工具",
         "aigcId": "2494",
         "children": [],
-        "id": 1000
+        "id": 1000,
+        "icon": "iconfont icon-hot icon-fw icon-lg"
     },
     {
         "name": "AIGC写作平台",
@@ -76,7 +77,8 @@
                 "id": 1242
             }
         ],
-        "id": 1013
+        "id": 1013,
+        "icon": "io io-webyemiansheji icon-fw icon-lg"
     },
     {
         "name": "AIGC绘画平台",
@@ -143,7 +145,8 @@
                 "id": 1385
             }
         ],
-        "id": 1259
+        "id": 1259,
+        "icon": "io io-V icon-fw icon-lg"
     },
     {
         "name": "AIGC视觉平台",
@@ -216,7 +219,8 @@
                 "id": 1544
             }
         ],
-        "id": 1388
+        "id": 1388,
+        "icon": "io io-tupiantianjia icon-fw icon-lg"
     },
     {
         "name": "AIGC视频平台",
@@ -283,7 +287,8 @@
                 "id": 1668
             }
         ],
-        "id": 1551
+        "id": 1551,
+        "icon": "io io-shipin2 icon-fw icon-lg"
     },
     {
         "name": "AIGC语音平台",
@@ -326,7 +331,8 @@
                 "id": 1755
             }
         ],
-        "id": 1671
+        "id": 1671,
+        "icon": "io io-nlsasrcustommodel icon-fw icon-lg"
     },
     {
         "name": "AIGC办公平台",
@@ -387,7 +393,8 @@
                 "id": 1892
             }
         ],
-        "id": 1758
+        "id": 1758,
+        "icon": "io io-bangongyongpinguanli icon-fw icon-lg"
     },
     {
         "name": "AIGC学习平台",
@@ -430,7 +437,8 @@
                 "id": 1950
             }
         ],
-        "id": 1896
+        "id": 1896,
+        "icon": "io io-ziyuan icon-fw icon-lg"
     },
     {
         "name": "AIGC企业平台",
@@ -491,7 +499,8 @@
                 "id": 2037
             }
         ],
-        "id": 1952
+        "id": 1952,
+        "icon": "io io-icon-test1 icon-fw icon-lg"
     },
     {
         "name": "AIGC运营平台",
@@ -552,7 +561,8 @@
                 "id": 2182
             }
         ],
-        "id": 2045
+        "id": 2045,
+        "icon": "iconfont icon-zouxiang icon-fw icon-lg"
     },
     {
         "name": "AIGC开发平台",
@@ -607,7 +617,8 @@
                 "id": 2351
             }
         ],
-        "id": 2204
+        "id": 2204,
+        "icon": "io io-biancheng-01 icon-fw icon-lg"
     },
     {
         "name": "AI 大模型平台",
@@ -674,7 +685,8 @@
                 "id": 2412
             }
         ],
-        "id": 2361
+        "id": 2361,
+        "icon": "io io-AR icon-fw icon-lg"
     },
     {
         "name": "AI 智能体平台",
@@ -693,7 +705,8 @@
                 "id": 2423
             }
         ],
-        "id": 2415
+        "id": 2415,
+        "icon": "io io-jiqiren1 icon-fw icon-lg"
     },
     {
         "name": "AIGC服务平台",
@@ -748,6 +761,7 @@
                 "id": 2555
             }
         ],
-        "id": 2430
+        "id": 2430,
+        "icon": "io io-gupiao icon-fw icon-lg"
     }
 ]

@@ -33,7 +33,10 @@ async function getCategories(html, lis) {
         const link = $li.find('>a');
         cat.text = link.text().trim();
         cat.hash =link.attr('href').trim();
+        cat.icon = link.find('i').attr('class');
         
+        console.log(cat);
+
         const idIndex = cat.hash.lastIndexOf('-');
         if(idIndex > -1) {
             cat.id = cat.hash.substring(idIndex + 1);
@@ -113,7 +116,9 @@ async function getItemDetail(itemDom) {
     const htmlPath = path.join(dataPath, 'html', 'items', item.id + '.html');
     if(!fs.existsSync(htmlPath)) {
         const itemHtml = await getPageHtml(item.aboutUrl);
-        if(itemHtml) fs.writeFileSync(htmlPath, itemHtml);
+        if(itemHtml) {
+            fs.writeFileSync(htmlPath, itemHtml);
+        }
     }
     return item;
 }
@@ -204,8 +209,11 @@ async function convertItemsData(cat, items) {
             title: item.title,
             categoryId: cat.id,
             aigcId: item.id,
-        };
-
+        }
+        if(item.icon) {
+            newitem.icon = 'item_icons/' + newitem.id + '.png';
+            await saveImage(item.icon, path.join(imagePAth, newitem.icon))
+        }
         res.push(newitem);
         newitem.contentUrl = 'items/' + newitem.id + '.html';
         const contentPath = path.join(dataPath, newitem.contentUrl);
@@ -248,6 +256,10 @@ async function convertItemsData(cat, items) {
     }
     return res;
 }
+
+// 抓取分类
+start();
+convertToJTData();
 
 
 convertToJTData();

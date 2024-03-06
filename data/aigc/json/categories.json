@@ -2,12 +2,14 @@
     {
         "text": "AIGC热门工具",
         "hash": "#term-2494",
+        "icon": "iconfont icon-hot icon-fw icon-lg",
         "id": "2494",
         "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=2494&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0"
     },
     {
         "text": "AIGC写作平台",
         "hash": "#term-1908",
+        "icon": "io io-webyemiansheji icon-fw icon-lg",
         "id": "1908",
         "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=1908&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0",
         "children": [
@@ -82,6 +84,7 @@
     {
         "text": "AIGC绘画平台",
         "hash": "#term-1913",
+        "icon": "io io-V icon-fw icon-lg",
         "id": "1913",
         "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=1913&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0",
         "children": [
@@ -150,6 +153,7 @@
     {
         "text": "AIGC视觉平台",
         "hash": "#term-1906",
+        "icon": "io io-tupiantianjia icon-fw icon-lg",
         "id": "1906",
         "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=1906&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0",
         "children": [
@@ -224,6 +228,7 @@
     {
         "text": "AIGC视频平台",
         "hash": "#term-1909",
+        "icon": "io io-shipin2 icon-fw icon-lg",
         "id": "1909",
         "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=1909&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0",
         "children": [
@@ -290,8 +295,9 @@
         ]
     },
     {
-        "text": "AIGC语音平台",
+        "text": "AIGC音频平台",
         "hash": "#term-1905",
+        "icon": "io io-nlsasrcustommodel icon-fw icon-lg",
         "id": "1905",
         "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=1905&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0",
         "children": [
@@ -336,6 +342,7 @@
     {
         "text": "AIGC办公平台",
         "hash": "#term-1907",
+        "icon": "io io-bangongyongpinguanli icon-fw icon-lg",
         "id": "1907",
         "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=1907&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0",
         "children": [
@@ -398,6 +405,7 @@
     {
         "text": "AIGC学习平台",
         "hash": "#term-1916",
+        "icon": "io io-ziyuan icon-fw icon-lg",
         "id": "1916",
         "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=1916&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0",
         "children": [
@@ -442,6 +450,7 @@
     {
         "text": "AIGC企业平台",
         "hash": "#term-2359",
+        "icon": "io io-icon-test1 icon-fw icon-lg",
         "id": "2359",
         "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=2359&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0",
         "children": [
@@ -504,6 +513,7 @@
     {
         "text": "AIGC运营平台",
         "hash": "#term-1904",
+        "icon": "iconfont icon-zouxiang icon-fw icon-lg",
         "id": "1904",
         "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=1904&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0",
         "children": [
@@ -566,6 +576,7 @@
     {
         "text": "AIGC开发平台",
         "hash": "#term-1903",
+        "icon": "io io-biancheng-01 icon-fw icon-lg",
         "id": "1903",
         "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=1903&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0",
         "children": [
@@ -622,6 +633,7 @@
     {
         "text": "AI 大模型平台",
         "hash": "#term-6079",
+        "icon": "io io-AR icon-fw icon-lg",
         "id": "6079",
         "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=6079&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0",
         "children": [
@@ -690,6 +702,7 @@
     {
         "text": "AI 智能体平台",
         "hash": "#term-5766",
+        "icon": "io io-jiqiren1 icon-fw icon-lg",
         "id": "5766",
         "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=5766&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0",
         "children": [
@@ -710,6 +723,7 @@
     {
         "text": "AIGC服务平台",
         "hash": "#term-4829",
+        "icon": "io io-gupiao icon-fw icon-lg",
         "id": "4829",
         "url": "https://www.aigc.cn/wp-admin/admin-ajax.php?id=4829&taxonomy=favorites&action=load_home_tab&post_id=0&sidebar=0",
         "children": [
